@@ -1,0 +1,204 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global}
+    \entry{deeptransfermetric}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e8199dded5d79afb094e06ee2d9062a}{%
+           family={Junlin\bibnamedelima Hu1},
+           family_i={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           suffix={Jiwen\bibnamedelima Lu},
+           suffix_i={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Yap-Peng\bibnamedelima Tan},
+           given_i={Y\bibinithyphendelim P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e8199dded5d79afb094e06ee2d9062a}
+      \strng{fullhash}{9e8199dded5d79afb094e06ee2d9062a}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Deep Transfer Metric Learning}
+      \field{year}{2015}
+    \endentry
+    \entry{learningtransferabledeepadaptation}{article}{}
+      \name{author}{2}{}{%
+        {{hash=867778fd4a7456937f929a855edfaf77}{%
+           family={Long},
+           family_i={L\bibinitperiod},
+           given={Mingsheng},
+           given_i={M\bibinitperiod}}}%
+        {{hash=5677a530ed74bcd73cbf45f8088a8418}{%
+           family={Wang},
+           family_i={W\bibinitperiod},
+           given={Jianmin},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d0a8b6d397af10f12cacc1d1a2ccef2}
+      \strng{fullhash}{0d0a8b6d397af10f12cacc1d1a2ccef2}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Learning Transferable Features with Deep Adaptation Networks}
+      \field{volume}{abs/1502.02791}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1502.02791
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1502.02791
+      \endverb
+    \endentry
+    \entry{unifieddeepadaptation}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0f8bceb848ebb7a0a9a958c928bec5ae}{%
+           family={Motiian},
+           family_i={M\bibinitperiod},
+           given={Saeid},
+           given_i={S\bibinitperiod}}}%
+        {{hash=6f5cbed3b213c3acbda142abb79dfe0e}{%
+           family={Piccirilli},
+           family_i={P\bibinitperiod},
+           given={Marco},
+           given_i={M\bibinitperiod}}}%
+        {{hash=f4cc9bdda74c7a3fabb6b628b2b07a18}{%
+           family={Adjeroh},
+           family_i={A\bibinitperiod},
+           given={Donald\bibnamedelima A.},
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3d1c3abf5a2903162305279f0592166c}{%
+           family={Doretto},
+           family_i={D\bibinitperiod},
+           given={Gianfranco},
+           given_i={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{4fc824f57d418a59c05bc8770deb4fe6}
+      \strng{fullhash}{45a3e330a48814fd1e28a33c59e7f239}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Unified Deep Supervised Domain Adaptation and Generalization}
+      \field{volume}{abs/1709.10190}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1709.10190
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1709.10190
+      \endverb
+    \endentry
+    \entry{deepdomainconfusion}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fbca5fa50691269bdc9f6ee6c7f6f9e1}{%
+           family={Tzeng},
+           family_i={T\bibinitperiod},
+           given={Eric},
+           given_i={E\bibinitperiod}}}%
+        {{hash=98392893f850ec17a67d971c57631579}{%
+           family={Hoffman},
+           family_i={H\bibinitperiod},
+           given={Judy},
+           given_i={J\bibinitperiod}}}%
+        {{hash=803fb0c7ba592ff2ac5109218a4a8211}{%
+           family={Zhang},
+           family_i={Z\bibinitperiod},
+           given={Ning},
+           given_i={N\bibinitperiod}}}%
+        {{hash=df6dd5c482f41a42e672eecaa779020c}{%
+           family={Saenko},
+           family_i={S\bibinitperiod},
+           given={Kate},
+           given_i={K\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           family_i={D\bibinitperiod},
+           given={Trevor},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{f697f687986a4dcfe6dba17b997d6b08}
+      \strng{fullhash}{bffb46107232711cc38188e158b423e0}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Deep Domain Confusion: Maximizing for Domain Invariance}
+      \field{volume}{abs/1412.3474}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1412.3474
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1412.3474
+      \endverb
+    \endentry
+    \entry{simultaneousdeeptransfer}{article}{}
+      \name{author}{4}{}{%
+        {{hash=fbca5fa50691269bdc9f6ee6c7f6f9e1}{%
+           family={Tzeng},
+           family_i={T\bibinitperiod},
+           given={Eric},
+           given_i={E\bibinitperiod}}}%
+        {{hash=98392893f850ec17a67d971c57631579}{%
+           family={Hoffman},
+           family_i={H\bibinitperiod},
+           given={Judy},
+           given_i={J\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           family_i={D\bibinitperiod},
+           given={Trevor},
+           given_i={T\bibinitperiod}}}%
+        {{hash=df6dd5c482f41a42e672eecaa779020c}{%
+           family={Saenko},
+           family_i={S\bibinitperiod},
+           given={Kate},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f697f687986a4dcfe6dba17b997d6b08}
+      \strng{fullhash}{bf7562a7f07e766695c8c3e8908474e5}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Simultaneous Deep Transfer Across Domains and Tasks}
+      \field{volume}{abs/1510.02192}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1510.02192
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1510.02192
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
