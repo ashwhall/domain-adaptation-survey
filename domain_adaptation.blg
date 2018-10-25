@@ -1,15 +1,15 @@
-[0] Config.pm:340> INFO - This is Biber 2.4
-[0] Config.pm:343> INFO - Logfile is 'domain_adaptation.blg'
-[29] biber:287> INFO - === Wed Oct 24, 2018, 15:24:45
-[99] Biber.pm:348> INFO - Reading 'domain_adaptation.bcf'
-[214] Biber.pm:742> INFO - Found 5 citekeys in bib section 0
-[219] Biber.pm:3151> INFO - Processing section 0
-[242] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
-[251] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[257] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
-[333] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[333] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[334] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
-[334] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[339] bbl.pm:519> INFO - Writing 'domain_adaptation.bbl' with encoding 'ascii'
-[367] bbl.pm:615> INFO - Output to domain_adaptation.bbl
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'domain_adaptation.blg'
+[30] biber-MSWIN64:313> INFO - === 
+[55] Biber.pm:371> INFO - Reading 'domain_adaptation.bcf'
+[130] Biber.pm:857> INFO - Found 14 citekeys in bib section 0
+[150] Biber.pm:3976> INFO - Processing section 0
+[166] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
+[176] bibtex.pm:1500> INFO - LaTeX decoding ...
+[206] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
+[309] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[309] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[311] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[313] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[334] bbl.pm:617> INFO - Writing 'domain_adaptation.bbl' with encoding 'UTF-8'
+[342] bbl.pm:720> INFO - Output to domain_adaptation.bbl

@@ -53,6 +53,10 @@ One-step domain adaptation can be categorised into three approaches, each of whi
 \end{figure}
 
 
+
+
+
+
 \section{Discrepancy-Based DA}
 \quoteit{Assumes that fine-tuning the deep network model with labelled or unlabelled target data can diminish the shift between the two domains.}
 
@@ -81,11 +85,12 @@ From \parencite{simultaneousdeeptransfer}:
 
 
 
+
+
 \subsection{Statistic Criterion}
 \quoteit{Aligns the statistical distribution shift between the source and target domains using some mechanisms.}
-A frequently used metric is \textbf{Maximum Mean Discrepancy (MMD)}, which estimates the distance between different distributions. 
+A frequently used metric is \textbf{Maximum Mean Discrepancy (MMD)}, which estimates the distance between different distributions.  \\ \\
 
-\subsubsection{Domain Confusion}
 \textit{Deep Domain Confusion: Maximizing for Domain Invariance}\parencite{deepdomainconfusion} applies an \textit{adaptation layer} (bottleneck) at some point in the network, then jointly minimises classification error while maximising MMD at the adaptation layer. The minimisation of MMD between source and target domains is known as \textbf{domain confusion}.
 \begin{figure}[h]
 	\centering
@@ -99,12 +104,48 @@ A frequently used metric is \textbf{Maximum Mean Discrepancy (MMD)}, which estim
 	\caption{Architecture of Deep Domain Confusion\parencite{deepdomainconfusion}}
 	\label{fig:domainconfusion2}
 \end{figure}
-\textit{Learning Transferable Features with Deep Adaptation Networks}\parencite{learningtransferabledeepadaptation} takes it one step further by applying domain confusion to several layers of a network.
+\textit{Learning Transferable Features with Deep Adaptation Networks}\parencite{learningtransferabledeepadaptation} takes it one step further by applying domain confusion to several layers of a network. \\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{imgs/deepcoral}
+	\caption{Deep CORAL architecture\parencite{deepcoral}}
+	\label{fig:deepcoral}
+\end{figure}
+\textit{Deep CORAL}\parencite{deepcoral} is similar to the previous systems, but instead of minimising MMD, minimises the difference in second-order statistics between the source and target
+feature activations (the learned feature covariances). Similarly, this can be applied to any layer of a network.
+
+
+
 
 
 
 \subsection{Architecture Criterion}
 \quoteit{Aims at improving the ability of learning more transferable features by adjusting the architectures of deep networks. The techniques that are proven to be cost effective include adaptive batch normalisation (BN), weak-related weight and domain-guided dropout.}
+
+Instead of transfer-learning by fine-tuning weights to a target domain, \textit{Beyond Sharing Weights for Deep Domain Adaptation}\parencite{beyondsharing} adopts a dual-stream network architecture where select layers in the target classifier has distinct weights, which are regularised such that they have a similar distribution as those in the source domain model. They also say \textit{``...the class-related knowledge is stored in the weight matrix, whereas domain-related knowledge is represented by the statistics of the batch normalization (BN) layer''} \\
+\begin{figure}
+	\centering
+	\includegraphics[width=7cm]{imgs/beyondsharing}
+	\caption{}
+	\label{fig:beyondsharing}
+\end{figure}
+
+\textit{Revisiting Batch Normalization For Practical Domain Adaptation}\parencite{revisitingbatchnorm} hypothesizes that ``the label related knowledge is stored in the weight matrix of each layer, whereas domain related knowledge is represented by the statistics of the Batch Normalization layer''. They  recommend the usage of \textbf{Adaptive Batch Normalization} to normalise features between domains. \\
+
+\textit{AutoDIAL: Automatic DomaIn Alignment Layers}\parencite{autodial} feeds source/target domain images into a network in parallel and inserts \textbf{Domain Alignment (DA) layers} (similar to batch norm) to enforce feature similarity across domains. A learned parameter controls this ``degree of domain alignment'' as features pass through each of the DA layers. \\
+
+The survey\parencite{deepdomainsurvey} states that \textit{Improved Texture Networks}\parencite{texturenets} shows \textbf{Instance Normalisation} performs better at DA than standard Batch Normalisation... but I couldn't find that in the paper. \\
+
+\textit{Learning Deep Feature Representations with Domain Guided Dropout for
+	Person Re-identification}\parencite{domainguideddropout} introduces \textbf{Domain Guided Dropout}, which is essentially a method of applying dropout to irrelevant/unhelpful neurons per-domain. It's used like so:
+\begin{enumerate}
+	\item Train on all domains
+	\item For each entry in a feature vector for an image:
+	\item The impact score of this neuron is $\mathcal{L}(g(x)_{\setminus i})-\mathcal{L}(g(x))$, where $g(x)_{\setminus i}$ is the feature vector after zeroing-out the $i$-th neuron response to zero, averaged over all images in each domain
+	\item Continue training, but use the scores to guide dropout for each domain
+\end{enumerate}
+This comes in two flavours: deterministic and stochastic. Deterministic applies the resultant mask when the score is $<0$, stochastic uses the score to sample from a Bernoulli distribution.
 
 \subsection{Geometric Criterion}
 \quoteit{Bridges the source and target domains according to their geometrical properties. This criterion assumes that the relationship of geometric structures can reduce the domain shift.}
@@ -115,9 +156,25 @@ A frequently used metric is \textbf{Maximum Mean Discrepancy (MMD)}, which estim
 
 \subsection{Generative Models}
 \quoteit{The typical case is to use source images, noise vectors or both to generate simulated samples that are similar to the target samples and preserve the annotation information of the source domain}
+\textit{Cross-Domain Weakly-Supervised Object Detection through Progressive Domain Adaptation}\parencite{crossdomainweakly} uses two techniques to generate target domain examples. Perform image-to-image translation from the source to target domain using CycleGAN $=$ accurate bounding boxes, inaccurate visual features. Perform object detection to build ``pseudo-labels'' $=$ inaccurate bounding boxes, accurate visual features.
+\begin{figure}
+	\centering
+	\includegraphics[width=10cm]{imgs/crossdomainweakly}
+	\caption{A three-step training approach to go from source to target images. DT = Domain Transfer GAN; PL = Pseudo-Labels (from detector)}
+	\label{fig:crossdomainweakly}
+\end{figure}
 
 \subsection{Non-Generative Models}
 \quoteit{The feature extractor learns a discriminative representation using the labels in the source domain and maps the target data to the same space through a domain-confusion loss.}
+
+\textit{Domain Adaptive Faster R-CNN for Object Detection in the Wild}\parencite{adaptrcnn} adds an \textbf{Image-Level Domain Classifier} which is trained to predict the domain from which an image is sampled. They reverse gradients at the boundary, to apply adversarial training.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{imgs/adaptrcnn}
+	\caption{(a): Faster R-CNN; (b, upper): a Faster R-CNN-specific DA solution; (b, lower): conv-net used to predict image domain, with gradient-reversal-layer (GRL) at the boundary}
+	\label{fig:adaptrcnn}
+\end{figure}
+
 
 
 
