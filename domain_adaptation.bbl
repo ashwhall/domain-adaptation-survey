@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 2.6 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,43 +18,110 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
+  \sortlist[entry]{nty/global}
+    \entry{geodesicflowkernel}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2c10be630957cff703cc7a028e890b13}{%
+           family={Boqing\bibnamedelima Gong},
+           family_i={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+           suffix={Yuan\bibnamedelima Shi},
+           suffix_i={Y\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Fei\bibnamedelima Sha},
+           given_i={F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=f67e08fa64fd602c4ec562da14d65216}{%
+           family={Grauman},
+           family_i={G\bibinitperiod},
+           given={Kristen},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{335d6a2675d7a1ed862bd9cfb33279c9}
+      \strng{fullhash}{335d6a2675d7a1ed862bd9cfb33279c9}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2012 IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Geodesic flow kernel for unsupervised domain adaptation}
+      \field{year}{2012}
+    \endentry
+    \entry{domainsep}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b7179bde800cf47832f13f6a5619d2f3}{%
+           family={Bousmalis},
+           family_i={B\bibinitperiod},
+           given={Konstantinos},
+           given_i={K\bibinitperiod}}}%
+        {{hash=97c4319c60529377c639659197508ae8}{%
+           family={Trigeorgis},
+           family_i={T\bibinitperiod},
+           given={George},
+           given_i={G\bibinitperiod}}}%
+        {{hash=94f4bc4a582c08c7f6831cafecd54553}{%
+           family={Silberman},
+           family_i={S\bibinitperiod},
+           given={Nathan},
+           given_i={N\bibinitperiod}}}%
+        {{hash=6e4c62612fa904e2c1c6c00006ccc142}{%
+           family={Krishnan},
+           family_i={K\bibinitperiod},
+           given={Dilip},
+           given_i={D\bibinitperiod}}}%
+        {{hash=8bbc4c5d96f205bada839e74e0202146}{%
+           family={Erhan},
+           family_i={E\bibinitperiod},
+           given={Dumitru},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa8010c8a934bd8af513fa60e877036e}
+      \strng{fullhash}{8c2442384caca11459365a0e06ac90cc}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Domain Separation Networks}
+      \field{volume}{abs/1608.06019}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1608.06019
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1608.06019
+      \endverb
+    \endentry
     \entry{autodial}{article}{}
       \name{author}{5}{}{%
         {{hash=18bb6d76db9607bdaf25ca9119087667}{%
            family={Carlucci},
-           familyi={C\bibinitperiod},
+           family_i={C\bibinitperiod},
            given={Fabio\bibnamedelima Maria},
-           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           given_i={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=3f543b20ea038a15d7e0248ffa6161df}{%
            family={Porzi},
-           familyi={P\bibinitperiod},
+           family_i={P\bibinitperiod},
            given={Lorenzo},
-           giveni={L\bibinitperiod}}}%
+           given_i={L\bibinitperiod}}}%
         {{hash=9d4f580ce73488f4a2f658d6e453bd4d}{%
            family={Caputo},
-           familyi={C\bibinitperiod},
+           family_i={C\bibinitperiod},
            given={Barbara},
-           giveni={B\bibinitperiod}}}%
+           given_i={B\bibinitperiod}}}%
         {{hash=a33944841ee65fd69c36a4585fe3263d}{%
            family={Ricci},
-           familyi={R\bibinitperiod},
+           family_i={R\bibinitperiod},
            given={Elisa},
-           giveni={E\bibinitperiod}}}%
-        {{hash=3915d16973a49d0993d3f9af55923325}{%
-           family={Bul{ò}},
-           familyi={B\bibinitperiod},
+           given_i={E\bibinitperiod}}}%
+        {{hash=62c86b5cf4d89befa20fdc96b0cb3f9f}{%
+           family={Bul\`{o}},
+           family_i={B\bibinitperiod},
            given={Samuel\bibnamedelima Rota},
-           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
       \strng{namehash}{c7517052446ad2bf2f73b4f7015f0430}
-      \strng{fullhash}{fe64d42fe56d89f22ae5e1e79c0d3b4f}
-      \strng{bibnamehash}{c7517052446ad2bf2f73b4f7015f0430}
-      \strng{authorbibnamehash}{c7517052446ad2bf2f73b4f7015f0430}
-      \strng{authornamehash}{c7517052446ad2bf2f73b4f7015f0430}
-      \strng{authorfullhash}{fe64d42fe56d89f22ae5e1e79c0d3b4f}
+      \strng{fullhash}{a8d0b3ae102885b65e10ec6b1e42bd4d}
       \field{sortinit}{C}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -65,9 +132,6 @@
       \verb{eprint}
       \verb 1704.08082
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1704.08082
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1704.08082
       \endverb
@@ -76,38 +140,34 @@
       \name{author}{5}{}{%
         {{hash=811ceb0cea7550f0abce68827e166ba5}{%
            family={Chen},
-           familyi={C\bibinitperiod},
+           family_i={C\bibinitperiod},
            given={Yuhua},
-           giveni={Y\bibinitperiod}}}%
+           given_i={Y\bibinitperiod}}}%
         {{hash=4d5a1ec375736c19dc1665edb1bb6fee}{%
            family={Li},
-           familyi={L\bibinitperiod},
+           family_i={L\bibinitperiod},
            given={Wen},
-           giveni={W\bibinitperiod}}}%
+           given_i={W\bibinitperiod}}}%
         {{hash=4bcaf1e909c373c8d1b0b19722fc580e}{%
            family={Sakaridis},
-           familyi={S\bibinitperiod},
+           family_i={S\bibinitperiod},
            given={Christos},
-           giveni={C\bibinitperiod}}}%
+           given_i={C\bibinitperiod}}}%
         {{hash=18dd1a18471fd1f5b26b954a35dbd8c2}{%
            family={Dai},
-           familyi={D\bibinitperiod},
+           family_i={D\bibinitperiod},
            given={Dengxin},
-           giveni={D\bibinitperiod}}}%
+           given_i={D\bibinitperiod}}}%
         {{hash=5fdb9fa53d476a58c4cd9ec531daadf2}{%
            family={Gool},
-           familyi={G\bibinitperiod},
+           family_i={G\bibinitperiod},
            given={Luc\bibnamedelima Van},
-           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+           given_i={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
       \strng{namehash}{e868aa328f14640ac6d039593384f0bd}
       \strng{fullhash}{e0bf433e971fdc7c806f602e5f32ae7f}
-      \strng{bibnamehash}{e868aa328f14640ac6d039593384f0bd}
-      \strng{authorbibnamehash}{e868aa328f14640ac6d039593384f0bd}
-      \strng{authornamehash}{e868aa328f14640ac6d039593384f0bd}
-      \strng{authorfullhash}{e0bf433e971fdc7c806f602e5f32ae7f}
       \field{sortinit}{C}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -118,44 +178,151 @@
       \verb{eprint}
       \verb 1803.03243
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1803.03243
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1803.03243
+      \endverb
+    \endentry
+    \entry{unsuperviseddomainadaptation}{article}{}
+      \name{author}{2}{}{%
+        {{hash=08ddf7ec3c94815436149213b48c1dc1}{%
+           family={Ganin},
+           family_i={G\bibinitperiod},
+           given={Yaroslav},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=a48f60762c88685a899455e12615e1df}{%
+           family={Lempitsky},
+           family_i={L\bibinitperiod},
+           given={Victor},
+           given_i={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a89bb842ec5d311aefa94aac2356f9e}
+      \strng{fullhash}{0a89bb842ec5d311aefa94aac2356f9e}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Unsupervised Domain Adaptation by Backpropagation}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://arxiv.org/abs/1409.7495
+      \endverb
+    \endentry
+    \entry{drcn}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f264ff7d355eb637d77705b582099783}{%
+           family={Ghifary},
+           family_i={G\bibinitperiod},
+           given={Muhammad},
+           given_i={M\bibinitperiod}}}%
+        {{hash=6d9b1368768c241b5b24cbccedc2a3c2}{%
+           family={Kleijn},
+           family_i={K\bibinitperiod},
+           given={W.\bibnamedelimi Bastiaan},
+           given_i={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=e678527db27127baf2e337470c642bc4}{%
+           family={Zhang},
+           family_i={Z\bibinitperiod},
+           given={Mengjie},
+           given_i={M\bibinitperiod}}}%
+        {{hash=fbb019d6a198795f750f89fcfc28125e}{%
+           family={Balduzzi},
+           family_i={B\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+        {{hash=4d5a1ec375736c19dc1665edb1bb6fee}{%
+           family={Li},
+           family_i={L\bibinitperiod},
+           given={Wen},
+           given_i={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{f07bf7df0f9c8913d84083f35562f237}
+      \strng{fullhash}{7e8fa670e46655f9e1a2578ef7dfdae6}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Deep Reconstruction-Classification Networks for Unsupervised Domain Adaptation}
+      \field{volume}{abs/1607.03516}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1607.03516
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1607.03516
+      \endverb
+    \endentry
+    \entry{domainadatpforlargescale}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0b3943c3bfdbb5867b3760f7c7d488c2}{%
+           family={Glorot},
+           family_i={G\bibinitperiod},
+           given={Xavier},
+           given_i={X\bibinitperiod}}}%
+        {{hash=f1733e10bf044cbd7be63e10e5689d78}{%
+           family={Bordes},
+           family_i={B\bibinitperiod},
+           given={Antoine},
+           given_i={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           family_i={B\bibinitperiod},
+           given={Yoshua},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bellevue, Washington, USA}%
+      }
+      \list{publisher}{1}{%
+        {Omnipress}%
+      }
+      \strng{namehash}{59e7b11c8612bb9c193b9bfa91e1c729}
+      \strng{fullhash}{59e7b11c8612bb9c193b9bfa91e1c729}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 28th International Conference on International Conference on Machine Learning}
+      \field{isbn}{978-1-4503-0619-5}
+      \field{series}{ICML'11}
+      \field{title}{Domain Adaptation for Large-scale Sentiment Classification: A Deep Learning Approach}
+      \field{year}{2011}
+      \field{pages}{513\bibrangedash 520}
+      \range{pages}{8}
+      \verb{url}
+      \verb http://dl.acm.org/citation.cfm?id=3104482.3104547
       \endverb
     \endentry
     \entry{crossdomainweakly}{article}{}
       \name{author}{4}{}{%
         {{hash=fdc2736771ffaba39dc56378a2e7153e}{%
            family={Inoue},
-           familyi={I\bibinitperiod},
+           family_i={I\bibinitperiod},
            given={Naoto},
-           giveni={N\bibinitperiod}}}%
+           given_i={N\bibinitperiod}}}%
         {{hash=e78a5c7f0ac9f494eb0096929db383eb}{%
            family={Furuta},
-           familyi={F\bibinitperiod},
+           family_i={F\bibinitperiod},
            given={Ryosuke},
-           giveni={R\bibinitperiod}}}%
+           given_i={R\bibinitperiod}}}%
         {{hash=d8159879a7ea3fbbefeaad163e5a103d}{%
            family={Yamasaki},
-           familyi={Y\bibinitperiod},
+           family_i={Y\bibinitperiod},
            given={Toshihiko},
-           giveni={T\bibinitperiod}}}%
+           given_i={T\bibinitperiod}}}%
         {{hash=cfbe35e84da0a10b271ffe2a11a17842}{%
            family={Aizawa},
-           familyi={A\bibinitperiod},
+           family_i={A\bibinitperiod},
            given={Kiyoharu},
-           giveni={K\bibinitperiod}}}%
+           given_i={K\bibinitperiod}}}%
       }
       \strng{namehash}{2cebaa5bc14af38cee3a51a963a6957c}
       \strng{fullhash}{7cc2979d568a2bc42b9bf813a73bfde3}
-      \strng{bibnamehash}{2cebaa5bc14af38cee3a51a963a6957c}
-      \strng{authorbibnamehash}{2cebaa5bc14af38cee3a51a963a6957c}
-      \strng{authornamehash}{2cebaa5bc14af38cee3a51a963a6957c}
-      \strng{authorfullhash}{7cc2979d568a2bc42b9bf813a73bfde3}
       \field{sortinit}{I}
-      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -166,31 +333,24 @@
       \verb{eprint}
       \verb 1803.11365
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1803.11365
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1803.11365
       \endverb
     \endentry
     \entry{deeptransfermetric}{article}{}
       \name{author}{1}{}{%
-        {{hash=42ed54fa63c1bd089e3fa2778952b56f}{%
+        {{hash=9e8199dded5d79afb094e06ee2d9062a}{%
            family={Junlin\bibnamedelima Hu1},
-           familyi={J\bibinitperiod\bibinitdelim H\bibinitperiod},
-           given={Yap-Peng\bibnamedelima Tan},
-           giveni={Y\bibinithyphendelim P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           family_i={J\bibinitperiod\bibinitdelim H\bibinitperiod},
            suffix={Jiwen\bibnamedelima Lu},
-           suffixi={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           suffix_i={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Yap-Peng\bibnamedelima Tan},
+           given_i={Y\bibinithyphendelim P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
       }
-      \strng{namehash}{42ed54fa63c1bd089e3fa2778952b56f}
-      \strng{fullhash}{42ed54fa63c1bd089e3fa2778952b56f}
-      \strng{bibnamehash}{42ed54fa63c1bd089e3fa2778952b56f}
-      \strng{authorbibnamehash}{42ed54fa63c1bd089e3fa2778952b56f}
-      \strng{authornamehash}{42ed54fa63c1bd089e3fa2778952b56f}
-      \strng{authorfullhash}{42ed54fa63c1bd089e3fa2778952b56f}
+      \strng{namehash}{9e8199dded5d79afb094e06ee2d9062a}
+      \strng{fullhash}{9e8199dded5d79afb094e06ee2d9062a}
       \field{sortinit}{J}
-      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
@@ -201,38 +361,34 @@
       \name{author}{5}{}{%
         {{hash=46e2e0b282bd98dcc736b344f4c7274f}{%
            family={Li},
-           familyi={L\bibinitperiod},
+           family_i={L\bibinitperiod},
            given={Yanghao},
-           giveni={Y\bibinitperiod}}}%
+           given_i={Y\bibinitperiod}}}%
         {{hash=7b94afca49a5fad9a08434bbb6abf1ce}{%
            family={Wang},
-           familyi={W\bibinitperiod},
+           family_i={W\bibinitperiod},
            given={Naiyan},
-           giveni={N\bibinitperiod}}}%
+           given_i={N\bibinitperiod}}}%
         {{hash=3797f666351febe439e04520ec708726}{%
            family={Shi},
-           familyi={S\bibinitperiod},
+           family_i={S\bibinitperiod},
            given={Jianping},
-           giveni={J\bibinitperiod}}}%
+           given_i={J\bibinitperiod}}}%
         {{hash=e97cb99f7ec95531e680d1c399e23717}{%
            family={Liu},
-           familyi={L\bibinitperiod},
+           family_i={L\bibinitperiod},
            given={Jiaying},
-           giveni={J\bibinitperiod}}}%
+           given_i={J\bibinitperiod}}}%
         {{hash=53abe6191e5ecbc0680962581cbd5090}{%
            family={Hou},
-           familyi={H\bibinitperiod},
+           family_i={H\bibinitperiod},
            given={Xiaodi},
-           giveni={X\bibinitperiod}}}%
+           given_i={X\bibinitperiod}}}%
       }
       \strng{namehash}{102777818c0601d4c9ae52f6e4fb2a9a}
       \strng{fullhash}{9e9e5fa1059958a1837474d0bd4a61fc}
-      \strng{bibnamehash}{102777818c0601d4c9ae52f6e4fb2a9a}
-      \strng{authorbibnamehash}{102777818c0601d4c9ae52f6e4fb2a9a}
-      \strng{authornamehash}{102777818c0601d4c9ae52f6e4fb2a9a}
-      \strng{authorfullhash}{9e9e5fa1059958a1837474d0bd4a61fc}
       \field{sortinit}{L}
-      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -243,9 +399,6 @@
       \verb{eprint}
       \verb 1603.04779
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1603.04779
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1603.04779
       \endverb
@@ -254,23 +407,19 @@
       \name{author}{2}{}{%
         {{hash=867778fd4a7456937f929a855edfaf77}{%
            family={Long},
-           familyi={L\bibinitperiod},
+           family_i={L\bibinitperiod},
            given={Mingsheng},
-           giveni={M\bibinitperiod}}}%
+           given_i={M\bibinitperiod}}}%
         {{hash=5677a530ed74bcd73cbf45f8088a8418}{%
            family={Wang},
-           familyi={W\bibinitperiod},
+           family_i={W\bibinitperiod},
            given={Jianmin},
-           giveni={J\bibinitperiod}}}%
+           given_i={J\bibinitperiod}}}%
       }
       \strng{namehash}{0d0a8b6d397af10f12cacc1d1a2ccef2}
       \strng{fullhash}{0d0a8b6d397af10f12cacc1d1a2ccef2}
-      \strng{bibnamehash}{0d0a8b6d397af10f12cacc1d1a2ccef2}
-      \strng{authorbibnamehash}{0d0a8b6d397af10f12cacc1d1a2ccef2}
-      \strng{authornamehash}{0d0a8b6d397af10f12cacc1d1a2ccef2}
-      \strng{authorfullhash}{0d0a8b6d397af10f12cacc1d1a2ccef2}
       \field{sortinit}{L}
-      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -281,9 +430,6 @@
       \verb{eprint}
       \verb 1502.02791
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1502.02791
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1502.02791
       \endverb
@@ -292,33 +438,29 @@
       \name{author}{4}{}{%
         {{hash=0f8bceb848ebb7a0a9a958c928bec5ae}{%
            family={Motiian},
-           familyi={M\bibinitperiod},
+           family_i={M\bibinitperiod},
            given={Saeid},
-           giveni={S\bibinitperiod}}}%
+           given_i={S\bibinitperiod}}}%
         {{hash=6f5cbed3b213c3acbda142abb79dfe0e}{%
            family={Piccirilli},
-           familyi={P\bibinitperiod},
+           family_i={P\bibinitperiod},
            given={Marco},
-           giveni={M\bibinitperiod}}}%
+           given_i={M\bibinitperiod}}}%
         {{hash=f4cc9bdda74c7a3fabb6b628b2b07a18}{%
            family={Adjeroh},
-           familyi={A\bibinitperiod},
+           family_i={A\bibinitperiod},
            given={Donald\bibnamedelima A.},
-           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=3d1c3abf5a2903162305279f0592166c}{%
            family={Doretto},
-           familyi={D\bibinitperiod},
+           family_i={D\bibinitperiod},
            given={Gianfranco},
-           giveni={G\bibinitperiod}}}%
+           given_i={G\bibinitperiod}}}%
       }
       \strng{namehash}{4fc824f57d418a59c05bc8770deb4fe6}
       \strng{fullhash}{45a3e330a48814fd1e28a33c59e7f239}
-      \strng{bibnamehash}{4fc824f57d418a59c05bc8770deb4fe6}
-      \strng{authorbibnamehash}{4fc824f57d418a59c05bc8770deb4fe6}
-      \strng{authornamehash}{4fc824f57d418a59c05bc8770deb4fe6}
-      \strng{authorfullhash}{45a3e330a48814fd1e28a33c59e7f239}
       \field{sortinit}{M}
-      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -329,39 +471,55 @@
       \verb{eprint}
       \verb 1709.10190
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1709.10190
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1709.10190
       \endverb
+    \endentry
+    \entry{domainadaptforobj}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c1e8a9b50dce1da89ceb18da9f234938}{%
+           family={Raghuraman\bibnamedelima Gopalan},
+           family_i={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Ruonan\bibnamedelima Li},
+           given_i={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=58e34e482e0dd6e755329ae57da3b293}{%
+           family={Chellappa},
+           family_i={C\bibinitperiod},
+           given={Rama},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d654d7c4a766db8b95e4d4ebde3be5d9}
+      \strng{fullhash}{d654d7c4a766db8b95e4d4ebde3be5d9}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2011 International Conference on Computer Vision}
+      \field{title}{Domain adaptation for object recognition: An unsupervised approach}
+      \field{year}{2011}
     \endentry
     \entry{beyondsharing}{article}{}
       \name{author}{3}{}{%
         {{hash=805eb6170a220c180fd69e52011cf45a}{%
            family={Rozantsev},
-           familyi={R\bibinitperiod},
+           family_i={R\bibinitperiod},
            given={Artem},
-           giveni={A\bibinitperiod}}}%
+           given_i={A\bibinitperiod}}}%
         {{hash=4057fd915327931bbf3dd5ef41bacf61}{%
            family={Salzmann},
-           familyi={S\bibinitperiod},
+           family_i={S\bibinitperiod},
            given={Mathieu},
-           giveni={M\bibinitperiod}}}%
+           given_i={M\bibinitperiod}}}%
         {{hash=c5304d4d3b616054451f1a8db2a3974f}{%
            family={Fua},
-           familyi={F\bibinitperiod},
+           family_i={F\bibinitperiod},
            given={Pascal},
-           giveni={P\bibinitperiod}}}%
+           given_i={P\bibinitperiod}}}%
       }
       \strng{namehash}{cb0b46d6e75d4a8b163eb421de974398}
       \strng{fullhash}{cb0b46d6e75d4a8b163eb421de974398}
-      \strng{bibnamehash}{cb0b46d6e75d4a8b163eb421de974398}
-      \strng{authorbibnamehash}{cb0b46d6e75d4a8b163eb421de974398}
-      \strng{authornamehash}{cb0b46d6e75d4a8b163eb421de974398}
-      \strng{authorfullhash}{cb0b46d6e75d4a8b163eb421de974398}
       \field{sortinit}{R}
-      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -372,34 +530,88 @@
       \verb{eprint}
       \verb 1603.06432
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1603.06432
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1603.06432
+      \endverb
+    \endentry
+    \entry{progressivenets}{article}{}
+      \name{author}{8}{}{%
+        {{hash=6c4f5fb067e8e13379430f0331730a93}{%
+           family={Rusu},
+           family_i={R\bibinitperiod},
+           given={Andrei\bibnamedelima A.},
+           given_i={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1d330f892f381d4a85ee4dd2c5211e4a}{%
+           family={Rabinowitz},
+           family_i={R\bibinitperiod},
+           given={Neil\bibnamedelima C.},
+           given_i={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d422b1bf74c0632ee012bc51e397622d}{%
+           family={Desjardins},
+           family_i={D\bibinitperiod},
+           given={Guillaume},
+           given_i={G\bibinitperiod}}}%
+        {{hash=d7617682498ee9735efdd8bf09b26c0f}{%
+           family={Soyer},
+           family_i={S\bibinitperiod},
+           given={Hubert},
+           given_i={H\bibinitperiod}}}%
+        {{hash=5172437525948e3a9c13ee82c976ea69}{%
+           family={Kirkpatrick},
+           family_i={K\bibinitperiod},
+           given={James},
+           given_i={J\bibinitperiod}}}%
+        {{hash=481308b301166b521c74fde6566e97e6}{%
+           family={Kavukcuoglu},
+           family_i={K\bibinitperiod},
+           given={Koray},
+           given_i={K\bibinitperiod}}}%
+        {{hash=7045b009b04d57bd2e19b5dfa0864d4f}{%
+           family={Pascanu},
+           family_i={P\bibinitperiod},
+           given={Razvan},
+           given_i={R\bibinitperiod}}}%
+        {{hash=dc7c14ebfc2b431292d1ff4ded63d5e7}{%
+           family={Hadsell},
+           family_i={H\bibinitperiod},
+           given={Raia},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d7fd672ed2c5e6a7fec25263a52b7b2}
+      \strng{fullhash}{dcc8f605f3b02007215ccca9da7a2af1}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Progressive Neural Networks}
+      \field{volume}{abs/1606.04671}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1606.04671
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1606.04671
       \endverb
     \endentry
     \entry{deepcoral}{article}{}
       \name{author}{2}{}{%
         {{hash=42b4adc0348faf8eb90a193ad3ef852f}{%
            family={Sun},
-           familyi={S\bibinitperiod},
+           family_i={S\bibinitperiod},
            given={Baochen},
-           giveni={B\bibinitperiod}}}%
+           given_i={B\bibinitperiod}}}%
         {{hash=df6dd5c482f41a42e672eecaa779020c}{%
            family={Saenko},
-           familyi={S\bibinitperiod},
+           family_i={S\bibinitperiod},
            given={Kate},
-           giveni={K\bibinitperiod}}}%
+           given_i={K\bibinitperiod}}}%
       }
       \strng{namehash}{65dfcd15235062f4f87ceed64da0991e}
       \strng{fullhash}{65dfcd15235062f4f87ceed64da0991e}
-      \strng{bibnamehash}{65dfcd15235062f4f87ceed64da0991e}
-      \strng{authorbibnamehash}{65dfcd15235062f4f87ceed64da0991e}
-      \strng{authornamehash}{65dfcd15235062f4f87ceed64da0991e}
-      \strng{authorfullhash}{65dfcd15235062f4f87ceed64da0991e}
       \field{sortinit}{S}
-      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -410,9 +622,6 @@
       \verb{eprint}
       \verb 1607.01719
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1607.01719
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1607.01719
       \endverb
@@ -421,38 +630,34 @@
       \name{author}{5}{}{%
         {{hash=fbca5fa50691269bdc9f6ee6c7f6f9e1}{%
            family={Tzeng},
-           familyi={T\bibinitperiod},
+           family_i={T\bibinitperiod},
            given={Eric},
-           giveni={E\bibinitperiod}}}%
+           given_i={E\bibinitperiod}}}%
         {{hash=98392893f850ec17a67d971c57631579}{%
            family={Hoffman},
-           familyi={H\bibinitperiod},
+           family_i={H\bibinitperiod},
            given={Judy},
-           giveni={J\bibinitperiod}}}%
+           given_i={J\bibinitperiod}}}%
         {{hash=803fb0c7ba592ff2ac5109218a4a8211}{%
            family={Zhang},
-           familyi={Z\bibinitperiod},
+           family_i={Z\bibinitperiod},
            given={Ning},
-           giveni={N\bibinitperiod}}}%
+           given_i={N\bibinitperiod}}}%
         {{hash=df6dd5c482f41a42e672eecaa779020c}{%
            family={Saenko},
-           familyi={S\bibinitperiod},
+           family_i={S\bibinitperiod},
            given={Kate},
-           giveni={K\bibinitperiod}}}%
+           given_i={K\bibinitperiod}}}%
         {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
            family={Darrell},
-           familyi={D\bibinitperiod},
+           family_i={D\bibinitperiod},
            given={Trevor},
-           giveni={T\bibinitperiod}}}%
+           given_i={T\bibinitperiod}}}%
       }
       \strng{namehash}{f697f687986a4dcfe6dba17b997d6b08}
       \strng{fullhash}{bffb46107232711cc38188e158b423e0}
-      \strng{bibnamehash}{f697f687986a4dcfe6dba17b997d6b08}
-      \strng{authorbibnamehash}{f697f687986a4dcfe6dba17b997d6b08}
-      \strng{authornamehash}{f697f687986a4dcfe6dba17b997d6b08}
-      \strng{authorfullhash}{bffb46107232711cc38188e158b423e0}
       \field{sortinit}{T}
-      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -463,9 +668,6 @@
       \verb{eprint}
       \verb 1412.3474
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1412.3474
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1412.3474
       \endverb
@@ -474,33 +676,29 @@
       \name{author}{4}{}{%
         {{hash=fbca5fa50691269bdc9f6ee6c7f6f9e1}{%
            family={Tzeng},
-           familyi={T\bibinitperiod},
+           family_i={T\bibinitperiod},
            given={Eric},
-           giveni={E\bibinitperiod}}}%
+           given_i={E\bibinitperiod}}}%
         {{hash=98392893f850ec17a67d971c57631579}{%
            family={Hoffman},
-           familyi={H\bibinitperiod},
+           family_i={H\bibinitperiod},
            given={Judy},
-           giveni={J\bibinitperiod}}}%
+           given_i={J\bibinitperiod}}}%
         {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
            family={Darrell},
-           familyi={D\bibinitperiod},
+           family_i={D\bibinitperiod},
            given={Trevor},
-           giveni={T\bibinitperiod}}}%
+           given_i={T\bibinitperiod}}}%
         {{hash=df6dd5c482f41a42e672eecaa779020c}{%
            family={Saenko},
-           familyi={S\bibinitperiod},
+           family_i={S\bibinitperiod},
            given={Kate},
-           giveni={K\bibinitperiod}}}%
+           given_i={K\bibinitperiod}}}%
       }
       \strng{namehash}{f697f687986a4dcfe6dba17b997d6b08}
       \strng{fullhash}{bf7562a7f07e766695c8c3e8908474e5}
-      \strng{bibnamehash}{f697f687986a4dcfe6dba17b997d6b08}
-      \strng{authorbibnamehash}{f697f687986a4dcfe6dba17b997d6b08}
-      \strng{authornamehash}{f697f687986a4dcfe6dba17b997d6b08}
-      \strng{authorfullhash}{bf7562a7f07e766695c8c3e8908474e5}
       \field{sortinit}{T}
-      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -511,9 +709,6 @@
       \verb{eprint}
       \verb 1510.02192
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1510.02192
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1510.02192
       \endverb
@@ -522,28 +717,24 @@
       \name{author}{3}{}{%
         {{hash=a75feb2ef201e838d7c47d52c9dce4bf}{%
            family={Ulyanov},
-           familyi={U\bibinitperiod},
+           family_i={U\bibinitperiod},
            given={Dmitry},
-           giveni={D\bibinitperiod}}}%
+           given_i={D\bibinitperiod}}}%
         {{hash=85ab53268da1006b51b453d57d3566f2}{%
            family={Vedaldi},
-           familyi={V\bibinitperiod},
+           family_i={V\bibinitperiod},
            given={Andrea},
-           giveni={A\bibinitperiod}}}%
+           given_i={A\bibinitperiod}}}%
         {{hash=225bfe7526e843c77c22c0e4f9ef0326}{%
            family={Lempitsky},
-           familyi={L\bibinitperiod},
+           family_i={L\bibinitperiod},
            given={Victor\bibnamedelima S.},
-           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           given_i={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
       \strng{namehash}{e30cddf03d4f144f589ea1094b19bc68}
       \strng{fullhash}{e30cddf03d4f144f589ea1094b19bc68}
-      \strng{bibnamehash}{e30cddf03d4f144f589ea1094b19bc68}
-      \strng{authorbibnamehash}{e30cddf03d4f144f589ea1094b19bc68}
-      \strng{authornamehash}{e30cddf03d4f144f589ea1094b19bc68}
-      \strng{authorfullhash}{e30cddf03d4f144f589ea1094b19bc68}
       \field{sortinit}{U}
-      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -554,9 +745,6 @@
       \verb{eprint}
       \verb 1701.02096
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1701.02096
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1701.02096
       \endverb
@@ -565,23 +753,19 @@
       \name{author}{2}{}{%
         {{hash=80fe924785a5b3a12cc6765b234d56de}{%
            family={Wang},
-           familyi={W\bibinitperiod},
+           family_i={W\bibinitperiod},
            given={Mei},
-           giveni={M\bibinitperiod}}}%
+           given_i={M\bibinitperiod}}}%
         {{hash=2ec197665ddc4935e136274967ffa4ae}{%
            family={Deng},
-           familyi={D\bibinitperiod},
+           family_i={D\bibinitperiod},
            given={Weihong},
-           giveni={W\bibinitperiod}}}%
+           given_i={W\bibinitperiod}}}%
       }
       \strng{namehash}{5dad0299034e5613863509a915c3f18e}
       \strng{fullhash}{5dad0299034e5613863509a915c3f18e}
-      \strng{bibnamehash}{5dad0299034e5613863509a915c3f18e}
-      \strng{authorbibnamehash}{5dad0299034e5613863509a915c3f18e}
-      \strng{authornamehash}{5dad0299034e5613863509a915c3f18e}
-      \strng{authorfullhash}{5dad0299034e5613863509a915c3f18e}
       \field{sortinit}{W}
-      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -592,44 +776,93 @@
       \verb{eprint}
       \verb 1802.03601
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1802.03601
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1802.03601
+      \endverb
+    \endentry
+    \entry{duallearning}{article}{}
+      \name{author}{7}{}{%
+        {{hash=9e9b656963676d00fe433042f96868b6}{%
+           family={Xia},
+           family_i={X\bibinitperiod},
+           given={Yingce},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=3a38e94b931e1376e2d1175473ce67ec}{%
+           family={He},
+           family_i={H\bibinitperiod},
+           given={Di},
+           given_i={D\bibinitperiod}}}%
+        {{hash=5588f729660dbe4dbf5af3850f858ae3}{%
+           family={Qin},
+           family_i={Q\bibinitperiod},
+           given={Tao},
+           given_i={T\bibinitperiod}}}%
+        {{hash=6b9aebd3540ced6487a5f42863cb5207}{%
+           family={Wang},
+           family_i={W\bibinitperiod},
+           given={Liwei},
+           given_i={L\bibinitperiod}}}%
+        {{hash=944469c286535032f6c946dad972fe16}{%
+           family={Yu},
+           family_i={Y\bibinitperiod},
+           given={Nenghai},
+           given_i={N\bibinitperiod}}}%
+        {{hash=dd23153bbab4f80fa60ca01a185528a8}{%
+           family={Liu},
+           family_i={L\bibinitperiod},
+           given={Tie{-}Yan},
+           given_i={T\bibinitperiod}}}%
+        {{hash=1aff41e42d5bdd64dba3eee1449193b6}{%
+           family={Ma},
+           family_i={M\bibinitperiod},
+           given={Wei{-}Ying},
+           given_i={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{08cfdd533c36e90ca9c8c5452edd363e}
+      \strng{fullhash}{647d732b0bc63222b1a536efa1bf3aa8}
+      \field{sortinit}{X}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Dual Learning for Machine Translation}
+      \field{volume}{abs/1611.00179}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1611.00179
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1611.00179
       \endverb
     \endentry
     \entry{domainguideddropout}{article}{}
       \name{author}{4}{}{%
         {{hash=41028368e6169b6177f4b66947f5eed0}{%
            family={Xiao},
-           familyi={X\bibinitperiod},
+           family_i={X\bibinitperiod},
            given={Tong},
-           giveni={T\bibinitperiod}}}%
+           given_i={T\bibinitperiod}}}%
         {{hash=c727733707a60b57a65c544b07a9825e}{%
            family={Li},
-           familyi={L\bibinitperiod},
+           family_i={L\bibinitperiod},
            given={Hongsheng},
-           giveni={H\bibinitperiod}}}%
+           given_i={H\bibinitperiod}}}%
         {{hash=dd64c5c44b678dcb01b887fcbcfedd40}{%
            family={Ouyang},
-           familyi={O\bibinitperiod},
+           family_i={O\bibinitperiod},
            given={Wanli},
-           giveni={W\bibinitperiod}}}%
+           given_i={W\bibinitperiod}}}%
         {{hash=e88500bd6ca50746707a22554761b61a}{%
            family={Wang},
-           familyi={W\bibinitperiod},
+           family_i={W\bibinitperiod},
            given={Xiaogang},
-           giveni={X\bibinitperiod}}}%
+           given_i={X\bibinitperiod}}}%
       }
       \strng{namehash}{f3082083ee58bcb6434e9db193ce161f}
       \strng{fullhash}{008e411c5709b2f121217db2a2b2df7a}
-      \strng{bibnamehash}{f3082083ee58bcb6434e9db193ce161f}
-      \strng{authorbibnamehash}{f3082083ee58bcb6434e9db193ce161f}
-      \strng{authornamehash}{f3082083ee58bcb6434e9db193ce161f}
-      \strng{authorfullhash}{008e411c5709b2f121217db2a2b2df7a}
       \field{sortinit}{X}
-      \field{sortinithash}{b0b62a29ee4a21a0e618fed53a0313cc}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -640,14 +873,52 @@
       \verb{eprint}
       \verb 1604.07528
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1604.07528
-      \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1604.07528
       \endverb
     \endentry
-  \enddatalist
+    \entry{unpairedimagetoimage}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ae8f9210d87f9c5a03a60a6fdb0f973d}{%
+           family={Zhu},
+           family_i={Z\bibinitperiod},
+           given={Jun{-}Yan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=b036e0ed5c21929ab46890b9a1033163}{%
+           family={Park},
+           family_i={P\bibinitperiod},
+           given={Taesung},
+           given_i={T\bibinitperiod}}}%
+        {{hash=cae9f806bc99a5f19fadea538fc2db04}{%
+           family={Isola},
+           family_i={I\bibinitperiod},
+           given={Phillip},
+           given_i={P\bibinitperiod}}}%
+        {{hash=6a42d448523b8d7c72613345041880c5}{%
+           family={Efros},
+           family_i={E\bibinitperiod},
+           given={Alexei\bibnamedelima A.},
+           given_i={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{505a9ef3b186328fb0cb1c361ad3d193}
+      \strng{fullhash}{e2fa4ecf92ffc297ffaa4a8ffdbdd0b1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks}
+      \field{volume}{abs/1703.10593}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1703.10593
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1703.10593
+      \endverb
+    \endentry
+  \endsortlist
 \endrefsection
 \endinput
 

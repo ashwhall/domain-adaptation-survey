@@ -1,0 +1,578 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-lLo2nlsdl+bHLu6PGvC2j3wfP45RnK4wKQLiPnCDcuXfU38AiD+JCdMywnF3WbJC1jaxe3lAI6AM4uJuMFBLEw==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-08fc49d3bd2694c870ea23d0906f3610.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-mv6mDRPrioZTM6DqvWmoRTqzLBRhHXVLHuh4NbZvbWLfjVpC7gqihEHCfY+IR3fRoQ3KD7FLLz422a7iH/HT/g==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-4d9ab9919c1f80062f9616df3655449f.css" />
+
+
+
+
+
+
+  <meta name="viewport" content="width=device-width">
+
+  <title>awesome-transfer-learning/README.md at master · artix41/awesome-transfer-learning</title>
+    <meta name="description" content="Best transfer learning and domain adaptation resources (papers, tutorials, datasets, etc.) - artix41/awesome-transfer-learning">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+
+    <meta property="og:image" content="https://avatars1.githubusercontent.com/u/1157968?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="artix41/awesome-transfer-learning" /><meta property="og:url" content="https://github.com/artix41/awesome-transfer-learning" /><meta property="og:description" content="Best transfer learning and domain adaptation resources (papers, tutorials, datasets, etc.) - artix41/awesome-transfer-learning" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzAzNTMyNzg4OmY0MzllYmU2MGZkYjA5ZmEyNmU1NTJmNzE4Nzc5NjgyNjQ2NDBkMzMyYjNkMDc2YzY3Njc4OTA5Y2QxOWQyMDA=--6a5d5f51831671b5e83b10337737638b9fb15d1c">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="CFF7:7F42:E78CDE:15D24C6:5BF78BF5" data-pjax-transient>
+
+
+
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="CFF7:7F42:E78CDE:15D24C6:5BF78BF5" /><meta name="octolytics-dimension-region_edge" content="sea" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="14365341" /><meta name="octolytics-actor-login" content="ashwhall" /><meta name="octolytics-actor-hash" content="fca54a2be4855903192250970d412b8dcfc87dca38f4bc1344ef99c08f9b35a1" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+
+  <meta class="js-ga-set" name="userId" content="6e05793155dbc681fc688e27e73504c2" %>
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="ashwhall">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="YmFlNmY1ZTgwNTBmNTdlYWM4NWVlYzNlMWI0YWU5NzRkMDVjYTA2ZmYyZWI4YWNmZDNmMjUwMGY5ZDRhMzQ4Mnx7InJlbW90ZV9hZGRyZXNzIjoiMTMxLjE3Mi4zMS4xNzIiLCJyZXF1ZXN0X2lkIjoiQ0ZGNzo3RjQyOkU3OENERToxNUQyNEM2OjVCRjc4QkY1IiwidGltZXN0YW1wIjoxNTQyOTQ5ODc5LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT,DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,SAVED_THREADS,TIMELINE_COMMENT_UPDATES,SUGGESTED_CHANGES_UX_TEST,SUGGESTED_CHANGES_BATCH,RELATED_ISSUES,MARKETPLACE_INSIGHTS_V2">
+
+  <meta name="html-safe-nonce" content="9bcb0686853706b894814390e6a5c9348550cf0a">
+
+  <meta http-equiv="x-pjax-version" content="0db17447ccd5454c4cbcd5322594675a">
+
+
+      <link href="https://github.com/artix41/awesome-transfer-learning/commits/master.atom" rel="alternate" title="Recent Commits to awesome-transfer-learning:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/artix41/awesome-transfer-learning git https://github.com/artix41/awesome-transfer-learning.git">
+
+  <meta name="octolytics-dimension-user_id" content="1157968" /><meta name="octolytics-dimension-user_login" content="artix41" /><meta name="octolytics-dimension-repository_id" content="108416019" /><meta name="octolytics-dimension-repository_nwo" content="artix41/awesome-transfer-learning" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="108416019" /><meta name="octolytics-dimension-repository_network_root_nwo" content="artix41/awesome-transfer-learning" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/artix41/awesome-transfer-learning/blob/master/README.md" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-blob">
+
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-awesome-transfer-learning" class="anchor" aria-hidden="true" href="#awesome-transfer-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Awesome Transfer Learning</h1>
+<p>A list of awesome papers and cool resources on transfer learning, domain adaptation and domain-to-domain translation in general! As you will notice, this list is currently mostly focused on domain adaptation (DA) and domain-to-domain translation, but don't hesitate to suggest resources in other subfields of transfer learning. I accept pull requests.</p>
+<h1><a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Table of Contents</h1>
+<ul>
+<li><a href="#tutorials-and-blogs">Tutorial and Blogs</a></li>
+<li><a href="#papers">Papers</a>
+<ul>
+<li><a href="#surveys">Surveys</a></li>
+<li><a href="#deep-transfer-learning">Deep Transfer Learning</a>
+<ul>
+<li><a href="#fine-tuning-approach">Fine-tuning approach</a></li>
+<li><a href="#feature-extraction-embedding-approach">Feature extraction (embedding) approach</a></li>
+<li><a href="#policy-transfer-for-rl">Policy transfer for RL</a></li>
+<li><a href="#few-shot-transfer-learning">Few-shot transfer learning</a></li>
+<li><a href="#meta-transfer-learning">Meta transfer learning</a></li>
+<li><a href="#applications">Applications</a></li>
+</ul>
+</li>
+<li><a href="#unsupervised-domain-adaptation">Unsupervised Domain Adaptation</a>
+<ul>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#adversarial-methods">Adversarial methods</a></li>
+<li><a href="#optimal-transport">Optimal Transport</a></li>
+<li><a href="#embedding-methods">Embedding methods</a></li>
+<li><a href="#kernel-methods">Kernel methods</a></li>
+<li><a href="#autoencoder-approach">Autoencoder approach</a></li>
+<li><a href="#subspace-learning">Subspace learning</a></li>
+<li><a href="#self-ensembling-methods">Self-ensembling methods</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#semi-supervised-domain-adaptation">Semi-supervised Domain Adaptation</a>
+<ul>
+<li><a href="#general-methods">General methods</a></li>
+<li><a href="#subspace-learning">Subspace learning</a></li>
+<li><a href="#copulas-methods">Copulas methods</a></li>
+</ul>
+</li>
+<li><a href="#few-shot-supervised-domain-adaptation">Few-shot Supervised Domain Adaptation</a>
+<ul>
+<li><a href="#adversarial-methods">Adversarial methods</a></li>
+<li><a href="#embedding-methods">Embedding methods</a></li>
+</ul>
+</li>
+<li><a href="#applied-domain-adaptation">Applied Domain Adaptation</a>
+<ul>
+<li><a href="#physics">Physics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#datasets">Datasets</a>
+<ul>
+<li><a href="#image-to-image">Image-to-image</a></li>
+<li><a href="#text-to-text">Text-to-text</a></li>
+</ul>
+</li>
+<li><a href="#results">Results</a>
+<ul>
+<li><a href="/artix41/awesome-transfer-learning/blob/master/digits-transfer">Digits transfer</a></li>
+</ul>
+</li>
+<li><a href="#challenges">Challenges</a></li>
+<li><a href="#libraries">Libraries</a></li>
+</ul>
+<h1><a id="user-content-tutorials-and-blogs" class="anchor" aria-hidden="true" href="#tutorials-and-blogs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tutorials and Blogs</h1>
+<ul>
+<li><a href="http://ruder.io/transfer-learning/index.html" rel="nofollow">Transfer Learning − Machine Learning's Next Frontier</a></li>
+<li><a href="https://artix41.github.io/static/domain-adaptation-in-2017/" rel="nofollow">A Little Review of Domain Adaptation in 2017</a></li>
+</ul>
+<h1><a id="user-content-papers" class="anchor" aria-hidden="true" href="#papers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Papers</h1>
+<p>Papers are ordered by theme and inside each theme by publication date (submission date for arXiv papers). If the network or algorithm is given a name in a paper, this one is written in bold before the paper's name.</p>
+<h2><a id="user-content-surveys" class="anchor" aria-hidden="true" href="#surveys"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Surveys</h2>
+<ul>
+<li><a href="https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf" rel="nofollow">A Survey on Transfer Learning</a> (2009)</li>
+<li><a href="http://www.jmlr.org/papers/volume10/taylor09a/taylor09a.pdf" rel="nofollow">Transfer Learning for Reinforcement Learning Domains: A Survey</a> (2009)</li>
+<li><a href="https://link.springer.com/article/10.1186/s40537-016-0043-6" rel="nofollow">A Survey of transfer learning</a> (2016)</li>
+<li><a href="https://arxiv.org/abs/1702.05374" rel="nofollow">Domain Adaptation for Visual Applications: A Comprehensive Survey</a> (2017)</li>
+<li><a href="https://arxiv.org/abs/1802.03601" rel="nofollow">Deep Visual Domain Adaptation: A Survey</a> (2018)</li>
+</ul>
+<h2><a id="user-content-deep-transfer-learning" class="anchor" aria-hidden="true" href="#deep-transfer-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deep Transfer Learning</h2>
+<p>Transfer of deep learning models.</p>
+<h3><a id="user-content-fine-tuning-approach" class="anchor" aria-hidden="true" href="#fine-tuning-approach"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fine-tuning approach</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/1805.08974" rel="nofollow">Do Better ImageNet Models Transfer Better?</a> (2018)</li>
+</ul>
+<h3><a id="user-content-feature-extraction-embedding-approach" class="anchor" aria-hidden="true" href="#feature-extraction-embedding-approach"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Feature extraction (embedding) approach</h3>
+<ul>
+<li><a href="https://www.cv-foundation.org//openaccess/content_cvpr_workshops_2014/W15/papers/Razavian_CNN_Features_Off-the-Shelf_2014_CVPR_paper.pdf" rel="nofollow">CNN Features off-the-shelf: an Astounding Baseline for Recognition</a> (2014)</li>
+<li><a href="https://arxiv.org/abs/1804.08328v1" rel="nofollow">Taskonomy: Disentangling Task Transfer Learning</a> (2018)</li>
+</ul>
+<h3><a id="user-content-multi-task-learning" class="anchor" aria-hidden="true" href="#multi-task-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multi-task learning</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/1606.09282" rel="nofollow">Learning without forgetting</a> (2016)</li>
+</ul>
+<h3><a id="user-content-policy-transfer-for-rl" class="anchor" aria-hidden="true" href="#policy-transfer-for-rl"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Policy transfer for RL</h3>
+<ul>
+<li><a href="https://www.rug.nl/research/portal/files/19535198/MS_PACMAN_RL.pdf" rel="nofollow">Reinforcement Learning to Train Ms. Pac-Man Using Higher-order Action-relative Inputs</a> (2013)</li>
+</ul>
+<h3><a id="user-content-few-shot-transfer-learning" class="anchor" aria-hidden="true" href="#few-shot-transfer-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Few-shot transfer learning</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/1707.01066" rel="nofollow">Zero-Shot Transfer Learning for Event Extraction</a> (2017)</li>
+<li><a href="https://www.eecs.qmul.ac.uk/~sgg/papers/ZhangEtAl_CVPR2017.pdf" rel="nofollow">Learning a Deep Embedding Model for Zero-Shot Learning</a> (2017)</li>
+</ul>
+<h3><a id="user-content-meta-transfer-learning" class="anchor" aria-hidden="true" href="#meta-transfer-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Meta transfer learning</h3>
+<ul>
+<li><a href="http://proceedings.mlr.press/v80/wei18a/wei18a.pdf" rel="nofollow">Transfer Learning via Learning to Transfer</a> (2018)</li>
+</ul>
+<h3><a id="user-content-applications" class="anchor" aria-hidden="true" href="#applications"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Applications</h3>
+<h4><a id="user-content-medical-imaging" class="anchor" aria-hidden="true" href="#medical-imaging"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Medical imaging:</h4>
+<ul>
+<li><a href="https://arxiv.org/abs/1602.03409" rel="nofollow">Deep Convolutional Neural Networks forComputer-Aided Detection: CNN Architectures, Dataset Characteristics and Transfer Learning</a> (2016)</li>
+<li><a href="https://arxiv.org/abs/1706.00712" rel="nofollow">Convolutional Neural Networks for Medical Image Analysis: Full Training or Fine Tuning?</a> (2017)</li>
+<li><a href="https://orbi.uliege.be/bitstreaom/2268/222511/1/mormont2018-comparison.pdf" rel="nofollow">Comparison of deep transfer learning strategies for digital pathology</a> (2018)</li>
+</ul>
+<h4><a id="user-content-robotics" class="anchor" aria-hidden="true" href="#robotics"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Robotics</h4>
+<ul>
+<li><a href="http://www.ai.rug.nl/~mwiering/GROUP/ARTICLES/ICPRAM_CNN_LOCALIZATION_2018.pdf" rel="nofollow">A Deep Convolutional Neural Network for Location Recognition and Geometry Based Information</a> (2018)</li>
+</ul>
+<h2><a id="user-content-unsupervised-domain-adaptation" class="anchor" aria-hidden="true" href="#unsupervised-domain-adaptation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unsupervised Domain Adaptation</h2>
+<p>Transfer between a source and a target domain. In unsupervised domain adaptation, only the source domain can have labels.</p>
+<h3><a id="user-content-theory" class="anchor" aria-hidden="true" href="#theory"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Theory</h3>
+<h4><a id="user-content-general" class="anchor" aria-hidden="true" href="#general"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General</h4>
+<ul>
+<li><a href="http://www.alexkulesza.com/pubs/adapt_mlj10.pdf" rel="nofollow">A theory of learning from different domains</a> (2010)</li>
+</ul>
+<h4><a id="user-content-multi-source" class="anchor" aria-hidden="true" href="#multi-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multi-source</h4>
+<ul>
+<li><a href="https://papers.nips.cc/paper/3550-domain-adaptation-with-multiple-sources.pdf" rel="nofollow">Domain Adaptation with Multiple Sources</a> (2008)</li>
+<li><a href="https://arxiv.org/abs/1805.08727" rel="nofollow">Algorithms and Theory for Multiple-Source Adaptation</a> (2018)</li>
+</ul>
+<h3><a id="user-content-adversarial-methods" class="anchor" aria-hidden="true" href="#adversarial-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adversarial methods</h3>
+<h4><a id="user-content-learning-a-latent-space" class="anchor" aria-hidden="true" href="#learning-a-latent-space"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Learning a latent space</h4>
+<ul>
+<li><strong>DANN</strong>: <a href="https://arxiv.org/abs/1505.07818" rel="nofollow">Domain-Adversarial Training of Neural Networks</a> (2015)</li>
+<li><strong>JAN</strong>: <a href="https://arxiv.org/abs/1605.06636" rel="nofollow">Deep Transfer Learning with Joint Adaptation Networks</a> (2016)</li>
+<li><strong>CoGAN</strong>: <a href="https://arxiv.org/abs/1606.07536" rel="nofollow">Coupled Generative Adversarial Networks</a> (2016)</li>
+<li><strong>DRCN</strong>: <a href="https://arxiv.org/abs/1607.03516" rel="nofollow">Deep Reconstruction-Classification Networks for Unsupervised Domain Adaptation</a> (2016)</li>
+<li><strong>DSN</strong>: <a href="https://arxiv.org/abs/1608.06019" rel="nofollow">Domain Separation Networks</a> (2016)</li>
+<li><strong>ADDA</strong>: <a href="https://arxiv.org/abs/1702.05464" rel="nofollow">Adaptative Discriminative Domain Adaptation</a> (2017)</li>
+<li><strong>GenToAdapt</strong>: <a href="https://arxiv.org/abs/1704.01705" rel="nofollow">Generate To Adapt: Aligning Domains using Generative Adversarial Networks</a> (2017)</li>
+<li><strong>WDGRL</strong>: <a href="https://arxiv.org/abs/1707.01217" rel="nofollow">Wasserstein Distance Guided Representation Learning for Domain Adaptation</a> (2017)</li>
+<li><strong>CyCADA</strong>: <a href="http://proceedings.mlr.press/v80/hoffman18a/hoffman18a.pdf" rel="nofollow">CyCADA: Cycle-Consistent Adversarial Domain Adaptation</a> (2017)</li>
+<li><strong>DIRT-T</strong>: <a href="https://arxiv.org/abs/1802.08735" rel="nofollow">A DIRT-T Approach to Unsupervised Domain Adaptation</a> (2017)</li>
+<li><strong>DupGAN</strong>: <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Hu_Duplex_Generative_Adversarial_CVPR_2018_paper.pdf" rel="nofollow">Duplex Generative Adversarial Network for Unsupervised Domain Adaptation</a> (2018)</li>
+<li><strong>MSTN</strong>: <a href="http://proceedings.mlr.press/v80/xie18c/xie18c.pdf" rel="nofollow">Learning Semantic Representations for Unsupervised Domain Adaptation</a> (2018)</li>
+</ul>
+<h4><a id="user-content-image-to-image-translation" class="anchor" aria-hidden="true" href="#image-to-image-translation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Image-to-Image translation</h4>
+<ul>
+<li><strong>DIAT</strong>: <a href="https://arxiv.org/abs/1610.05586" rel="nofollow">Deep Identity-aware Transfer of Facial Attributes</a> (2016)</li>
+<li><strong>Pix2pix</strong>: <a href="https://arxiv.org/abs/1611.07004" rel="nofollow">Image-to-Image Translation with Conditional Adversarial Networks</a> (2016)</li>
+<li><strong>DTN</strong>: <a href="https://arxiv.org/abs/1611.02200" rel="nofollow">Unsupervised Cross-domain Image Generation</a> (2016)</li>
+<li><strong>SimGAN</strong>: <a href="https://arxiv.org/abs/1612.07828" rel="nofollow">Learning from Simulated and Unsupervised Images through Adversarial Training (2016)</a> (2016)</li>
+<li><strong>PixelDA</strong>: <a href="https://arxiv.org/abs/1612.05424" rel="nofollow">Unsupervised Pixel–Level Domain Adaptation with Generative Adversarial Networks</a> (2016)</li>
+<li><strong>UNIT</strong>: <a href="https://arxiv.org/abs/1703.00848" rel="nofollow">Unsupervised Image-to-Image Translation Networks</a> (2017)</li>
+<li><strong>CycleGAN</strong>: <a href="https://arxiv.org/abs/1703.10593" rel="nofollow">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</a> (2017)</li>
+<li><strong>DiscoGAN</strong>: <a href="https://arxiv.org/abs/1703.05192" rel="nofollow">Learning to Discover Cross-Domain Relations with Generative Adversarial Networks</a> (2017)</li>
+<li><strong>DualGAN</strong>: <a href="https://arxiv.org/abs/1704.02510" rel="nofollow">DualGAN: Unsupervised Dual Learning for Image-to-Image Translation</a> (2017)</li>
+<li><strong>SBADA-GAN</strong>: <a href="https://arxiv.org/abs/1705.08824" rel="nofollow">From source to target and back: symmetric bi-directional adaptive GAN</a> (2017)</li>
+<li><strong>DistanceGAN</strong>: <a href="https://arxiv.org/abs/1706.00826" rel="nofollow">One-Sided Unsupervised Domain Mapping</a> (2017)</li>
+<li><strong>pix2pixHD</strong>: <a href="https://arxiv.org/abs/1711.11585" rel="nofollow">High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs</a> (2018)</li>
+<li><strong>I2I</strong>: <a href="https://arxiv.org/abs/1712.00479" rel="nofollow">Image to Image Translation for Domain Adaptation</a> (2017)</li>
+<li><strong>MUNIT</strong>: <a href="https://arxiv.org/abs/1804.04732" rel="nofollow">Multimodal Unsupervised Image-to-Image Translation</a> (2018)</li>
+</ul>
+<h4><a id="user-content-multi-source-adaptation" class="anchor" aria-hidden="true" href="#multi-source-adaptation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multi-source adaptation</h4>
+<ul>
+<li><strong>StarGAN</strong>: <a href="https://arxiv.org/abs/1711.09020" rel="nofollow">StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation</a> (2017)</li>
+<li><strong>XGAN</strong>: <a href="https://arxiv.org/abs/1711.05139" rel="nofollow">XGAN: Unsupervised Image-to-Image Translation for Many-to-Many Mappings</a> (2017)</li>
+<li><strong>BicycleGAN</strong> : <a href="https://arxiv.org/abs/1711.11586" rel="nofollow">Toward Multimodal Image-to-Image Translation</a> (2017)</li>
+<li><a href="https://arxiv.org/abs/1712.00123" rel="nofollow">Label Efficient Learning of Transferable Representations across Domains and Tasks</a> (2017)</li>
+<li><strong>ComboGAN</strong>: <a href="https://arxiv.org/abs/1712.06909" rel="nofollow">ComboGAN: Unrestrained Scalability for Image Domain Translation</a> (2017)</li>
+<li><strong>AugCGAN</strong>: <a href="https://arxiv.org/abs/1802.10151" rel="nofollow">Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data</a> (2018)</li>
+<li><strong>RadialGAN</strong>: <a href="https://arxiv.org/abs/1802.06403" rel="nofollow">RadialGAN: Leveraging multiple datasets to improve target-specific predictive models using Generative Adversarial Networks</a> (2018)</li>
+<li><strong>MADA</strong>: <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17067/16644" rel="nofollow">Multi-Adversarial Domain Adaptation</a> (2018)</li>
+<li><strong>MDAN</strong>: <a href="https://arxiv.org/abs/1705.09684" rel="nofollow">Multiple Source Domain Adaptation with Adversarial Learning</a> (2018)</li>
+</ul>
+<h4><a id="user-content-temporal-models-videos" class="anchor" aria-hidden="true" href="#temporal-models-videos"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Temporal models (videos)</h4>
+<ul>
+<li><strong>Model F</strong>: <a href="https://arxiv.org/pdf/1708.02191.pdf" rel="nofollow">Unsupervised Domain Adaptation for Face Recognition in Unlabeled Videos</a> (2017)</li>
+<li><strong>RecycleGAN</strong>: <a href="https://arxiv.org/pdf/1808.05174.pdf" rel="nofollow">Recycle-GAN: Unsupervised Video Retargeting</a> (2018)</li>
+<li><strong>Vid2vid</strong>: <a href="https://arxiv.org/pdf/1808.06601.pdf" rel="nofollow">Video-to-Video Synthesis</a> (2018)</li>
+<li><strong>Temporal Smoothing (TS)</strong>: <a href="https://arxiv.org/pdf/1808.07371.pdf" rel="nofollow">Everybody Dance Now</a> (2018)</li>
+</ul>
+<h3><a id="user-content-optimal-transport" class="anchor" aria-hidden="true" href="#optimal-transport"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optimal Transport</h3>
+<ul>
+<li><strong>OT</strong>: <a href="https://arxiv.org/pdf/1507.00504.pdf" rel="nofollow">Optimal Transport for Domain Adaptation</a> (2015)</li>
+<li><a href="https://arxiv.org/pdf/1610.04420.pdf" rel="nofollow">Theoretical Analysis of Domain Adaptation with Optimal Transport</a> (2016)</li>
+<li><strong>JDOT</strong>: <a href="https://arxiv.org/pdf/1705.08848.pdf" rel="nofollow">Joint distribution optimal transportation for domain adaptation</a> (2017)</li>
+<li><strong>Monge map learning</strong>: <a href="https://arxiv.org/pdf/1711.02283.pdf" rel="nofollow">Large Scale Optimal Transport and Mapping Estimation</a> (2017)</li>
+<li><strong>JCPOT</strong>: <a href="https://arxiv.org/pdf/1803.04899.pdf" rel="nofollow">Optimal Transport for Multi-source Domain Adaptation under Target Shift</a> (2018)</li>
+<li><strong>DeepJDOT</strong>: <a href="https://arxiv.org/pdf/1803.10081.pdf" rel="nofollow">DeepJDOT: Deep Joint distribution optimal transport for unsupervised domain adaptation</a> (2018)</li>
+</ul>
+<h3><a id="user-content-embedding-methods" class="anchor" aria-hidden="true" href="#embedding-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Embedding methods</h3>
+<ul>
+<li><a href="https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Kodirov_Unsupervised_Domain_Adaptation_ICCV_2015_paper.pdf" rel="nofollow">Unsupervised Domain Adaptation for Zero-Shot Learning</a> (2015)</li>
+<li><strong>DA<sub>assoc</sub></strong> : <a href="https://arxiv.org/abs/1708.00938" rel="nofollow">Associative Domain Adaptation</a> (2017)</li>
+</ul>
+<h3><a id="user-content-kernel-methods" class="anchor" aria-hidden="true" href="#kernel-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Kernel methods</h3>
+<ul>
+<li><strong>SurK</strong>: <a href="https://pdfs.semanticscholar.org/edb8/be020e228153163428e8b698aef1af4c5cad.pdf" rel="nofollow">Covariate Shift in Hilbert Space: A Solution via Surrogate Kernels</a> (2015)</li>
+<li><strong>DAN</strong>: <a href="https://arxiv.org/abs/1502.02791" rel="nofollow">Learning Transferable Features with Deep Adaptation Networks</a> (2015)</li>
+<li><strong>RTN</strong>: <a href="https://arxiv.org/abs/1602.04433" rel="nofollow">Unsupervised Domain Adaptation with Residual Transfer Networks</a> (2016)</li>
+<li><strong>Easy DA</strong>: <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7899860" rel="nofollow">A Simple Approach for Unsupervised Domain Adaptation</a> (2016)</li>
+</ul>
+<h3><a id="user-content-autoencoder-approach" class="anchor" aria-hidden="true" href="#autoencoder-approach"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Autoencoder approach</h3>
+<ul>
+<li><strong>MCAE</strong>: <a href="https://arxiv.org/abs/1503.03163" rel="nofollow">Learning Classifiers from Synthetic Data Using a Multichannel Autoencoder</a> (2015)</li>
+<li><strong>SMCAE</strong>: <a href="https://arxiv.org/abs/1509.05463" rel="nofollow">Learning from Synthetic Data Using a Stacked Multichannel Autoencoder</a> (2015)</li>
+</ul>
+<h3><a id="user-content-subspace-learning" class="anchor" aria-hidden="true" href="#subspace-learning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Subspace Learning</h3>
+<ul>
+<li><strong>SGF</strong>: <a href="https://pdfs.semanticscholar.org/d3ed/bfee56884d2b6d9aa51a6c525f9a05248802.pdf" rel="nofollow">Domain Adaptation for Object Recognition: An Unsupervised Approach</a> (2011)</li>
+<li><strong>GFK</strong>: <a href="https://pdfs.semanticscholar.org/0a59/337568cbf74e7371fb543f7ca34bbc2153ac.pdf" rel="nofollow">Geodesic Flow Kernel for Unsupervised Domain Adaptation</a> (2012)</li>
+<li><strong>SA</strong>: <a href="https://pdfs.semanticscholar.org/51a4/d658c93c5169eef7568d3d1cf53e8e495087.pdf" rel="nofollow">Unsupervised Visual Domain Adaptation Using Subspace Alignment</a> (2015)</li>
+<li><strong>CORAL</strong>: <a href="https://arxiv.org/abs/1511.05547" rel="nofollow">Return of Frustratingly Easy Domain Adaptation</a> (2015)</li>
+<li><strong>Deep CORAL</strong>: <a href="https://arxiv.org/abs/1607.01719" rel="nofollow">Deep CORAL: Correlation Alignment for Deep Domain Adaptation</a> (2016)</li>
+<li><strong>ILS</strong>: <a href="https://arxiv.org/abs/1611.08350" rel="nofollow">Learning an Invariant Hilbert Space for Domain Adaptation</a> (2016)</li>
+<li><strong>Log D-CORAL</strong>: <a href="https://arxiv.org/abs/1705.08180" rel="nofollow">Correlation Alignment by Riemannian Metric for Domain Adaptation</a> (2017)</li>
+</ul>
+<h3><a id="user-content-self-ensembling-methods" class="anchor" aria-hidden="true" href="#self-ensembling-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Self-Ensembling methods</h3>
+<ul>
+<li><strong>MT</strong>: <a href="https://arxiv.org/abs/1706.05208" rel="nofollow">Self-ensembling for domain adaptation</a> (2017)</li>
+</ul>
+<h3><a id="user-content-other" class="anchor" aria-hidden="true" href="#other"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Other</h3>
+<ul>
+<li><a href="https://scalable.mpi-inf.mpg.de/files/2013/04/saenko_eccv_2010.pdf" rel="nofollow">Adapting Visual Category Models to New Domains</a> (2010)</li>
+<li><strong>AdaBN</strong>: <a href="https://arxiv.org/abs/1603.04779" rel="nofollow">Revisiting Batch Normalization for Practical Domain Adaptation</a> (2016)</li>
+<li><a href="https://arxiv.org/abs/1704.08082" rel="nofollow">AutoDIAL: Automatic Domain Alignment Layers</a> (2017)</li>
+</ul>
+<h2><a id="user-content-semi-supervised-domain-adaptation" class="anchor" aria-hidden="true" href="#semi-supervised-domain-adaptation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Semi-supervised Domain Adaptation</h2>
+<p>All the source points are labelled, but only few target points are.</p>
+<h3><a id="user-content-general-methods" class="anchor" aria-hidden="true" href="#general-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General methods</h3>
+<ul>
+<li><strong>da+lap-sim</strong> : <a href="http://jeffdonahue.com/papers/DAInstanceConstraintsCVPR2013.pdf" rel="nofollow">Semi-Supervised Domain Adaptation with Instance Constraints</a> (2013)</li>
+</ul>
+<h3><a id="user-content-subspace-learning-1" class="anchor" aria-hidden="true" href="#subspace-learning-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Subspace learning</h3>
+<ul>
+<li><strong>EA++</strong>: <a href="https://papers.nips.cc/paper/4009-co-regularization-based-semi-supervised-domain-adaptation.pdf" rel="nofollow">Co-regularization Based Semi-supervised Domain Adaptation</a> (2010)</li>
+<li><strong>SDASL</strong>: <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Yao_Semi-Supervised_Domain_Adaptation_2015_CVPR_paper.pdf" rel="nofollow">Semi-supervised Domain Adaptation with Subspace Learning for Visual Recognition</a> (2015)</li>
+</ul>
+<h3><a id="user-content-copulas-methods" class="anchor" aria-hidden="true" href="#copulas-methods"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Copulas methods</h3>
+<ul>
+<li><strong>NPRV</strong>: <a href="https://papers.nips.cc/paper/4802-semi-supervised-domain-adaptation-with-non-parametric-copulas.pdf" rel="nofollow">Semi-Supervised Domain Adaptation with Non-Parametric Copulas</a> (2013)</li>
+</ul>
+<h2><a id="user-content-few-shot-supervised-domain-adaptation" class="anchor" aria-hidden="true" href="#few-shot-supervised-domain-adaptation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Few-shot Supervised Domain Adaptation</h2>
+<p>Only a few target examples are available, but they are labelled</p>
+<h3><a id="user-content-adversarial-methods-1" class="anchor" aria-hidden="true" href="#adversarial-methods-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adversarial methods</h3>
+<ul>
+<li><strong>FADA</strong>: <a href="https://arxiv.org/abs/1711.02536" rel="nofollow">Few-Shot Adversarial Domain Adaptation</a> (2017)</li>
+<li><strong>Augmented-Cyc</strong>: <a href="https://arxiv.org/abs/1807.00374" rel="nofollow">Augmented Cyclic Adversarial Learning for Domain Adaptation</a> (2018)</li>
+</ul>
+<h3><a id="user-content-embedding-methods-1" class="anchor" aria-hidden="true" href="#embedding-methods-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Embedding methods</h3>
+<ul>
+<li><strong>CCSA</strong>: <a href="https://arxiv.org/abs/1709.10190" rel="nofollow">Unified Deep Supervised Domain Adaptation and Generalization</a> (2017)</li>
+</ul>
+<h2><a id="user-content-applied-domain-adaptation" class="anchor" aria-hidden="true" href="#applied-domain-adaptation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Applied Domain Adaptation</h2>
+<p>Domain adaptation applied to other fields</p>
+<h3><a id="user-content-physics" class="anchor" aria-hidden="true" href="#physics"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Physics</h3>
+<ul>
+<li><a href="http://papers.nips.cc/paper/6699-learning-to-pivot-with-adversarial-networks.pdf" rel="nofollow">Learning to Pivot with Adversarial Networks</a> (2016)</li>
+<li><a href="https://arxiv.org/abs/1710.08382" rel="nofollow">Identifying Quantum Phase Transitions with Adversarial Neural Networks</a> (2017)</li>
+<li><a href="https://arxiv.org/abs/1806.00419" rel="nofollow">Automated discovery of characteristic features of phase transitions in many-body localization</a> (2017)</li>
+</ul>
+<h3><a id="user-content-audio-processing" class="anchor" aria-hidden="true" href="#audio-processing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Audio Processing</h3>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6817520" rel="nofollow">Autoencoder-based Unsupervised Domain Adaptation for Speech Emotion Recognition</a> (2014)</li>
+<li><a href="https://arxiv.org/abs/1804.00644" rel="nofollow">Adversarial Teacher-Student Learning for Unsupervised Domain Adaptation</a> (2018)</li>
+</ul>
+<h1><a id="user-content-datasets" class="anchor" aria-hidden="true" href="#datasets"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Datasets</h1>
+<h2><a id="user-content-image-to-image" class="anchor" aria-hidden="true" href="#image-to-image"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Image-to-image</h2>
+<ul>
+<li><a href="http://yann.lecun.com/exdb/mnist/" rel="nofollow">MNIST</a> vs <a href="https://drive.google.com/file/d/0B9Z4d7lAwbnTNDdNeFlERWRGNVk/view" rel="nofollow">MNIST-M</a> vs <a href="http://ufldl.stanford.edu/housenumbers/" rel="nofollow">SVHN</a> vs <a href="https://drive.google.com/file/d/0B9Z4d7lAwbnTSVR1dEFSRUFxOUU/view" rel="nofollow">Synth</a> vs <a href="http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass.html#usps" rel="nofollow">USPS</a>: digit images</li>
+<li><a href="http://benchmark.ini.rub.de/?section=gtsrb&amp;subsection=news" rel="nofollow">GTSRB</a> vs <a href="http://graphics.cs.msu.ru/en/node/1337" rel="nofollow">Syn Signs</a> : traffic sign recognition datasets, transfer between real and synthetic signs.</li>
+<li><a href="http://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html" rel="nofollow">NYU Depth Dataset V2</a>: labeled paired images taken with two different cameras (normal and depth)</li>
+<li><a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" rel="nofollow">CelebA</a>: faces of celebrities, offering the possibility to perform gender or hair color translation for instance</li>
+<li><a href="https://people.eecs.berkeley.edu/~jhoffman//domainadapt/" rel="nofollow">Office-Caltech dataset</a>: images of office objects from 10 common categories shared by the Office-31 and Caltech-256 datasets. There are in total four domains: Amazon, Webcam, DSLR and Caltech.</li>
+<li><a href="https://www.cityscapes-dataset.com/" rel="nofollow">Cityscapes dataset</a>: street scene photos (source) and their annoted version (target)</li>
+<li><a href="http://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes/" rel="nofollow">UnityEyes</a> vs <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/gaze-based-human-computer-interaction/appearance-based-gaze-estimation-in-the-wild-mpiigaze/" rel="nofollow">MPIIGaze</a>: simulated vs real gaze images (eyes)</li>
+<li><a href="https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/" rel="nofollow">CycleGAN datasets</a>: horse2zebra, apple2orange, cezanne2photo, monet2photo, ukiyoe2photo, vangogh2photo, summer2winter</li>
+<li><a href="https://people.eecs.berkeley.edu/~tinghuiz/projects/pix2pix/datasets/" rel="nofollow">pix2pix dataset</a>: edges2handbags, edges2shoes, facade, maps</li>
+<li><a href="http://www.socsci.ru.nl:8180/RaFD2/RaFD?p=main" rel="nofollow">RaFD</a>: facial images with 8 different emotions (anger, disgust, fear, happiness, sadness, surprise, contempt, and neutral). You can transfer a face from one emotion to another.</li>
+<li><a href="http://ai.bu.edu/visda-2017/#browse" rel="nofollow">VisDA 2017 classification dataset</a>: 12 categories of object images in 2 domains: 3D-models and real images.</li>
+<li><a href="http://hemanthdv.org/OfficeHome-Dataset/" rel="nofollow">Office-Home dataset</a>: images of objects in 4 domains: art, clipart, product and real-world.</li>
+<li><a href="https://github.com/layumi/DukeMTMC-reID_evaluation">DukeMTMC-reid</a> and <a href="http://www.liangzheng.org/Project/project_reid.html" rel="nofollow">Market-1501</a>: two pedestrian datasets collected at different places. The evaluation metric is based on open-set image retrieval.</li>
+</ul>
+<h2><a id="user-content-text-to-text" class="anchor" aria-hidden="true" href="#text-to-text"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Text-to-text</h2>
+<ul>
+<li><a href="https://www.cs.jhu.edu/~mdredze/datasets/sentiment/" rel="nofollow">Amazon review benchmark dataset</a>: sentiment analysis for four kinds (domains) of reviews: books, DVDs, electronics, kitchen</li>
+<li><a href="http://www.ecmlpkdd2006.org/challenge.html#download" rel="nofollow">ECML/PKDD Spam Filtering</a>: emails from 3 different inboxes, that can represent the 3 domains.</li>
+<li><a href="http://qwone.com/~jason/20Newsgroups/" rel="nofollow">20 Newsgroup</a>: collection of newsgroup documents across 6 top categories and 20 subcategories. Subcategories can play the role of the domains, as describe in <a href="https://arxiv.org/pdf/1707.01217.pdf" rel="nofollow">this article</a>.</li>
+</ul>
+<h1><a id="user-content-results" class="anchor" aria-hidden="true" href="#results"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Results</h1>
+<p>The results are indicated as the prediction accuracy (in %) in the target domain after adapting the source to the target. For the moment, they only correspond to the results given in the original papers, so the methodology may vary between each paper and these results must be taken with a grain of salt.</p>
+<h2><a id="user-content-digits-transfer-unsupervised" class="anchor" aria-hidden="true" href="#digits-transfer-unsupervised"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Digits transfer (unsupervised)</h2>
+<table>
+<thead>
+<tr>
+<th>Source<br>Target</th>
+<th>MNIST<br>MNIST-M</th>
+<th>Synth<br>SVHN</th>
+<th>MNIST<br>SVHN</th>
+<th>SVHN<br>MNIST</th>
+<th>MNIST<br>USPS</th>
+<th>USPS<br>MNIST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SA</td>
+<td>56.90</td>
+<td>86.44</td>
+<td>?</td>
+<td>59.32</td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>DANN</td>
+<td>76.66</td>
+<td>91.09</td>
+<td>?</td>
+<td>73.85</td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>CoGAN</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>91.2</td>
+<td>89.1</td>
+</tr>
+<tr>
+<td>DRCN</td>
+<td>?</td>
+<td>?</td>
+<td>40.05</td>
+<td>81.97</td>
+<td>91.80</td>
+<td>73.67</td>
+</tr>
+<tr>
+<td>DSN</td>
+<td>83.2</td>
+<td>91.2</td>
+<td>?</td>
+<td>82.7</td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>DTN</td>
+<td>?</td>
+<td>?</td>
+<td>90.66</td>
+<td>79.72</td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>PixelDA</td>
+<td>98.2</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>95.9</td>
+<td>?</td>
+</tr>
+<tr>
+<td>ADDA</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>76.0</td>
+<td>89.4</td>
+<td>90.1</td>
+</tr>
+<tr>
+<td>UNIT</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>90.53</td>
+<td>95.97</td>
+<td>93.58</td>
+</tr>
+<tr>
+<td>GenToAdapt</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>92.4</td>
+<td>95.3</td>
+<td>90.8</td>
+</tr>
+<tr>
+<td>SBADA-GAN</td>
+<td>99.4</td>
+<td>?</td>
+<td>61.1</td>
+<td>76.1</td>
+<td>97.6</td>
+<td>95.0</td>
+</tr>
+<tr>
+<td>DA<sub>assoc</sub></td>
+<td>89.47</td>
+<td>91.86</td>
+<td>?</td>
+<td>97.60</td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>CyCADA</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>90.4</td>
+<td>95.6</td>
+<td>96.5</td>
+</tr>
+<tr>
+<td>I2I</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>92.1</td>
+<td>95.1</td>
+<td>92.2</td>
+</tr>
+<tr>
+<td>DIRT-T</td>
+<td>98.7</td>
+<td>?</td>
+<td>76.5</td>
+<td>99.4</td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr>
+<td>DeepJDOT</td>
+<td>92.4</td>
+<td>?</td>
+<td>?</td>
+<td>96.7</td>
+<td>95.7</td>
+<td>96.4</td>
+</tr>
+</tbody>
+</table>
+<h1><a id="user-content-challenges" class="anchor" aria-hidden="true" href="#challenges"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Challenges</h1>
+<ul>
+<li><a href="http://ai.bu.edu/visda-2017/" rel="nofollow">Visual Domain Adaptation Challenge (VisDA)</a></li>
+<li><a href="https://blog.openai.com/retro-contest/" rel="nofollow">Open AI Retro Contest</a></li>
+</ul>
+<h1><a id="user-content-libraries" class="anchor" aria-hidden="true" href="#libraries"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Libraries</h1>
+<ul>
+<li>Domain Adaptation: <a href="https://github.com/domainadaptation/salad">Salad</a> (Semi-supervised Adaptive Learning Across Domains)</li>
+</ul>
+</article>
+  </div>
+
+
+  </body>
+</html>

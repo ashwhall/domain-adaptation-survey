@@ -76,10 +76,10 @@ From \parencite{simultaneousdeeptransfer}:
 
 \subsubsection{Embedded Metric Learning}
 \textit{Unified Deep Supervised Domain Adaptation and Generalization}\parencite{unifieddeepadaptation} uses a siamese network to process source and target domain examples simultaneously, and applies a \textit{Contrastive Semantic Alignment Loss} to the embedded examples, minimising the dissimilarity across domains. \\ \\
-\textit{Deep Transfer Metric Learning}\parencite{deeptransfermetric} demonstrates an unsupervised technique for transforming samples into a new subspace. Their training objectives are that:
+\textit{Deep Transfer Metric Learning}\parencite{deeptransfermetric} performs something similar, and uses training objectives that:
 \begin{enumerate}
-	\item the inter-class variations are maximised and the intra-class variations are minimised.
-	\item the distribution divergence between the source domain and the target domain at the top layer of the network is minimised.
+	\item maximise inter-class variations and minimise intra-class variations at arbitrary layers
+	\item minimise the distribution divergence between the source domain and the target domain at the penultimate layer of the network
 \end{enumerate}
 
 
@@ -89,15 +89,14 @@ From \parencite{simultaneousdeeptransfer}:
 
 \subsection{Statistic Criterion}
 \quoteit{Aligns the statistical distribution shift between the source and target domains using some mechanisms.}
-A frequently used metric is \textbf{Maximum Mean Discrepancy (MMD)}, which estimates the distance between different distributions.  \\ \\
+\begin{center}
+\fbox{\begin{minipage}{12cm}
+A frequently used metric is \textbf{Maximum Mean Discrepancy (MMD)}, which estimates the distance between different distributions.
+\end{minipage}}
+\end{center}
 
-\textit{Deep Domain Confusion: Maximizing for Domain Invariance}\parencite{deepdomainconfusion} applies an \textit{adaptation layer} (bottleneck) at some point in the network, then jointly minimises classification error while maximising MMD at the adaptation layer. The minimisation of MMD between source and target domains is known as \textbf{domain confusion}.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=10cm]{domainconfusion}
-	\caption{By jointly minimising classification error while maximising domain confusion, we learn representations that are discriminative and domain invariant}
-	\label{fig:domainconfusion}
-\end{figure}
+\textit{Deep Domain Confusion: Maximizing for Domain Invariance}\parencite{deepdomainconfusion} applies an \textit{adaptation layer} (bottleneck) at some point in the network, then jointly minimises classification error and MMD at the adaptation layer. The minimisation of MMD between source and target domains is known as \textbf{domain confusion}.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=6cm]{imgs/domainconfusion2}
@@ -123,25 +122,42 @@ feature activations (the learned feature covariances). Similarly, this can be ap
 \subsection{Architecture Criterion}
 \quoteit{Aims at improving the ability of learning more transferable features by adjusting the architectures of deep networks. The techniques that are proven to be cost effective include adaptive batch normalisation (BN), weak-related weight and domain-guided dropout.}
 
-Instead of transfer-learning by fine-tuning weights to a target domain, \textit{Beyond Sharing Weights for Deep Domain Adaptation}\parencite{beyondsharing} adopts a dual-stream network architecture where select layers in the target classifier has distinct weights, which are regularised such that they have a similar distribution as those in the source domain model. They also say \textit{``...the class-related knowledge is stored in the weight matrix, whereas domain-related knowledge is represented by the statistics of the batch normalization (BN) layer''} \\
-\begin{figure}
+Instead of transfer-learning by fine-tuning weights to a target domain, \textit{Beyond Sharing Weights for Deep Domain Adaptation}\parencite{beyondsharing} adopts a dual-stream network architecture where select layers in the target classifier has distinct weights, which are regularised such that they have a similar distribution as those in the source domain model. \\
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=7cm]{imgs/beyondsharing}
-	\caption{}
+	\caption{\textit{Beyond Sharing Weights} architecture. The layers indicated by ``loss'' do not share weights, but are optimised to have similar distributions.}
 	\label{fig:beyondsharing}
 \end{figure}
 
-\textit{Revisiting Batch Normalization For Practical Domain Adaptation}\parencite{revisitingbatchnorm} hypothesizes that ``the label related knowledge is stored in the weight matrix of each layer, whereas domain related knowledge is represented by the statistics of the Batch Normalization layer''. They  recommend the usage of \textbf{Adaptive Batch Normalization} to normalise features between domains. \\
+\textit{Revisiting Batch Normalization For Practical Domain Adaptation}\parencite{revisitingbatchnorm} hypothesizes that ``the label related knowledge is stored in the weight matrix of each layer, whereas domain related knowledge is represented by the statistics of the Batch Normalization layer''. They  recommend the usage of \textbf{Adaptive Batch Normalization} to normalise features between domains:
+\begin{align}
+	BN(X^t) = \lambda\bigg(\frac{x-\mu(X^t)}{\sigma(X^t)}\bigg)+\beta
+\end{align}
+where $\lambda$ and $\beta$ are parameters learned from the \textit{target} data. \\
 
-\textit{AutoDIAL: Automatic DomaIn Alignment Layers}\parencite{autodial} feeds source/target domain images into a network in parallel and inserts \textbf{Domain Alignment (DA) layers} (similar to batch norm) to enforce feature similarity across domains. A learned parameter controls this ``degree of domain alignment'' as features pass through each of the DA layers. \\
+\textit{AutoDIAL: Automatic DomaIn Alignment Layers}\parencite{autodial} feeds source/target domain images into a network in parallel and inserts \textbf{Domain Alignment (DA) layers} (similar to batch norm) to enforce feature similarity across domains (figure \ref{fig:autodial}). A learned parameter controls this ``degree of domain alignment'' as features pass through each of the DA layers. \\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=17cm]{imgs/autodial}
+	\caption{AutoDIAL aligns source/target distributions according to a learnt $\alpha$ at each DA layer}
+	\label{fig:autodial}
+\end{figure}
 
 The survey\parencite{deepdomainsurvey} states that \textit{Improved Texture Networks}\parencite{texturenets} shows \textbf{Instance Normalisation} performs better at DA than standard Batch Normalisation... but I couldn't find that in the paper. \\
+\begin{figure}[h]
+\centering
+\includegraphics[width=14cm]{imgs/norm-types}
+\caption{}
+\label{fig:norm-types}
+\end{figure}
+
 
 \textit{Learning Deep Feature Representations with Domain Guided Dropout for
 	Person Re-identification}\parencite{domainguideddropout} introduces \textbf{Domain Guided Dropout}, which is essentially a method of applying dropout to irrelevant/unhelpful neurons per-domain. It's used like so:
 \begin{enumerate}
 	\item Train on all domains
-	\item For each entry in a feature vector for an image:
+	\item For each entry in a chosen feature vector:
 	\item The impact score of this neuron is $\mathcal{L}(g(x)_{\setminus i})-\mathcal{L}(g(x))$, where $g(x)_{\setminus i}$ is the feature vector after zeroing-out the $i$-th neuron response to zero, averaged over all images in each domain
 	\item Continue training, but use the scores to guide dropout for each domain
 \end{enumerate}
@@ -149,14 +165,14 @@ This comes in two flavours: deterministic and stochastic. Deterministic applies 
 
 \subsection{Geometric Criterion}
 \quoteit{Bridges the source and target domains according to their geometrical properties. This criterion assumes that the relationship of geometric structures can reduce the domain shift.}
-
+\textit{Domain adaptation for object recognition: An unsupervised approach}\parencite{domainadaptforobj} and \textit{Geodesic flow kernel for unsupervised domain adaptation}\parencite{geodesicflowkernel} map features into an intermediate subspace to find the correlation between domains. They then interpolate between these spaces, starting with the source domain and moving towards the target domain.
 
 
 \section{Adversarial-Based DA}
 
 \subsection{Generative Models}
 \quoteit{The typical case is to use source images, noise vectors or both to generate simulated samples that are similar to the target samples and preserve the annotation information of the source domain}
-\textit{Cross-Domain Weakly-Supervised Object Detection through Progressive Domain Adaptation}\parencite{crossdomainweakly} uses two techniques to generate target domain examples. Perform image-to-image translation from the source to target domain using CycleGAN $=$ accurate bounding boxes, inaccurate visual features. Perform object detection to build ``pseudo-labels'' $=$ inaccurate bounding boxes, accurate visual features.
+\textit{Cross-Domain Weakly-Supervised Object Detection through Progressive Domain Adaptation}\parencite{crossdomainweakly} uses two techniques to generate target domain examples. Perform image-to-image translation from the source to target domain using CycleGAN $=$ accurate bounding boxes, inaccurate visual features. Perform object detection to build ``pseudo-labels'' $=$ inaccurate bounding boxes, accurate visual features. 
 \begin{figure}
 	\centering
 	\includegraphics[width=10cm]{imgs/crossdomainweakly}
@@ -166,14 +182,18 @@ This comes in two flavours: deterministic and stochastic. Deterministic applies 
 
 \subsection{Non-Generative Models}
 \quoteit{The feature extractor learns a discriminative representation using the labels in the source domain and maps the target data to the same space through a domain-confusion loss.}
+A fairly typical example is \textit{Unsupervised Domain Adaptation by Backpropagation}\parencite{unsuperviseddomainadaptation}, where the model is trained to predict the domain from which an image is sampled. They reverse gradients at the boundary, for apply adversarial training. \\
 
-\textit{Domain Adaptive Faster R-CNN for Object Detection in the Wild}\parencite{adaptrcnn} adds an \textbf{Image-Level Domain Classifier} which is trained to predict the domain from which an image is sampled. They reverse gradients at the boundary, to apply adversarial training.
+\textit{Domain Adaptive Faster R-CNN for Object Detection in the Wild}\parencite{adaptrcnn} applies it to Faster R-CNN by adding a domain-classifier to the region-proposals, in addition to the \textbf{Image-Level Domain Classifier},
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=14cm]{imgs/adaptrcnn}
 	\caption{(a): Faster R-CNN; (b, upper): a Faster R-CNN-specific DA solution; (b, lower): conv-net used to predict image domain, with gradient-reversal-layer (GRL) at the boundary}
 	\label{fig:adaptrcnn}
 \end{figure}
+
+Instead of reversing gradients, \textit{Simultaneous Deep Transfer Across Domains and Tasks}\parencite{simultaneousdeeptransfer} sets the targets for the domain classifier to be a uniform distribution over all domains -- thereby enforcing confusion.
+
 
 
 
@@ -185,10 +205,30 @@ This comes in two flavours: deterministic and stochastic. Deterministic applies 
 \subsection{Encoder-Decoder Reconstruction}
 \quoteit{By using stacked autoencoders (SAEs), encoder-decoder reconstruction methods combine the encoder network for representation learning with a decoder network for data reconstruction}
 
+\textit{Domain Adaptation for Large-Scale Sentiment Classification: A Deep Learning Approach}\parencite{domainadatpforlargescale} uses Stacked Denoising Auto-encoders (SDA) to learn a less domain-dependant representation -- an SDA is a stacked auto-encoder with stochastically-introduced noise added to the inputs. This gives good results, but doesn't scale well to high-dimensional data. \\
+
+\textit{Deep Reconstruction-Classification Networks for Unsupervised Domain Adaptation}\parencite{drcn} jointly learns the original (classification) task, and reconstruction of the inputs (figure \ref{fig:drcn}). \\
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm]{imgs/drcn}
+	\caption{The deep reconstruction classification network (DRCN) adds the task of reconstruction during training}
+	\label{fig:drcn}
+\end{figure}
+
+\textit{Domain Separation Networks}\parencite{domainsep} explicitly use source, target and shared encoders (figure \ref{fig:domainsep}). They have a bunch of losses, including feature similarity, feature difference, reconstruction loss and the classification loss. Requires that same-class different-domain images are passed in pairs during training.
+\begin{figure}
+	\centering
+	\includegraphics[width=14cm]{imgs/domainsep}
+	\caption{Domain Separation Networks architecture}
+	\label{fig:domainsep}
+\end{figure}
+
+
+
 \subsection{Adversarial Reconstruction}
 \quoteit{The reconstruction error is measured as the difference between the reconstructed and original images within each image domain by a cyclic mapping obtained via a GAN discriminator}
 
-
+The typical approach is ``dual learning'', where a network learns to map $X\rightarrow Y$ and $Y\rightarrow X$ simultaneously, using reconstruction loss for each side \parencite{duallearning}\parencite{unpairedimagetoimage}.
 
 
 
@@ -202,13 +242,57 @@ Multi-step domain adaptation can be categorised into three approaches as shown i
 \end{figure}
 \subsection{Hand-Crafted}
 \quoteit{Users determine the intermediate domains based on experience.}
+\textit{The intermediate domain can be selected by experience, that is, it is decided in advance. For example, when the source domain is image data and the target domain is composed of text data, some annotated images will clearly be crawled as intermediate domain data.}
+
 \subsection{Instance-Based}
 \quoteit{Selecting certain parts of data from the auxiliary datasets to compose the intermediate domains to train the deep network}
+
+
 \subsection{Representation-Based}
 \quoteit{Transfer is enabled via freezing the previously trained network and using their intermediate representations as input to the new one.}
 
+\textit{Progressive Neural Networks}\parencite{progressivenets} extends the network for each domain, freezing existing weights when training on the new domain (figure \ref{fig:progressivenets}).
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5cm]{imgs/progressivenets}
+	\caption{}
+	\label{fig:progressivenets}
+\end{figure}
 
 \chapter*{Application to Swimming Project}
+While domain adaptation is something we wish to improve across the board, it is our crop-grid unit that is most in need of it. Unfortunately, that's also the most difficult for two main reasons:
+\begin{enumerate}
+	\item High-dimensionality - \textit{large cost for any additional operations/layers}
+	\item Spatially-dependant features - \textit{location matters (unlike classification) making it harder to deal with feature distributions}
+\end{enumerate}
+
+\subsubsection{Maximum Mean Discrepancy (MMD) or Deep CORAL}
+\begin{itemize}
+	\item These two options make distributions of features similar at either a particular layer, or by some (learned) weighted amount at each layer.
+	\item As our features have spatial dimensions, we would need to find a way to align our regions between source and target.
+	\item This will likely not be possible, as we need to train simultaneously on source and target domains
+\end{itemize}
+
+
+\subsubsection{Adaptive Batch Normalisation / Instance Normalisation / \textit{Group Normalisation}}
+\begin{itemize}
+	\item Should be fairly easy to implement
+	\item Likely no overhead, as we currently use batch normalisation.
+	\item Although statistics do change between venues/videos, a single frame is a good representation of the entire video
+\end{itemize}
+
+
+\subsubsection{Adversarial Domain classifier}
+\begin{itemize}
+	\item Relatively easy to implement in the regression unit
+	\item May not be possible in crop-grid unit due to high-dimensionality
+\end{itemize}
+
+\subsubsection{Reconstruction loss}
+\begin{itemize}
+	\item Relatively easy to implement in the regression unit
+	\item May not be possible in crop-grid unit due to high-dimensionality
+\end{itemize}
 
 	
 \end{document}
